@@ -1,0 +1,15 @@
+/* custom.css */
+#header {
+	background-color: #f0f8fb;
+}
+#adj {
+	color: #18b2e7;
+}
+#nvclr {
+	color: #a2a4a3;
+}
+#footer {
+	background-color: #323232;
+	min-height: 80px;
+	color: #e0eff1;
+}
