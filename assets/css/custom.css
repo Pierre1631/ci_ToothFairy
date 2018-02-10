@@ -9,7 +9,33 @@
 	color: #a2a4a3;
 }
 #footer {
-	background-color: #323232;
+	background-color: #696969;
 	min-height: 80px;
 	color: #e0eff1;
+}
+#homebann-bg{
+		background-image: url("../images/Banner1.png");
+		background-size: 1150px 350px;
+		min-height: 350px;
+		font-family: Helvetica;
+}
+#tbann1{
+	margin-left:80px; 
+	color:white
+}
+#home-about{
+		min-height:300px;
+		font-size:14px;
+		font-family: Helvetica;
+		color:#adadad;
+}
+#homesrv-border{
+		border-top:3px solid #1985a1; 
+		border-bottom:3px solid #1985a1;
+		min-height:250px;
+}
+#homesrv-image{
+		max-width:200px;
+		margin-left:27px; 
+		margin-top:10px;
 }
