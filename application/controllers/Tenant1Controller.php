@@ -27,7 +27,7 @@ class Tenant1Controller extends CI_Controller {
 	  		$this->session->set_flashdata('success_msg', 'Registered successfully. Now login to your account.');
 	  		redirect('Tenant1Controller/login_view');
 		}
-		else{ 
+		else{
 	  		$this->session->set_flashdata('error_msg', 'Error occured, Try again.');
 	  		redirect('Tenant1Controller');
 		}
