@@ -266,7 +266,7 @@ li a.active {
 /*service area*/
 
 .service {
-    background: url(../img/pattern.jpg);
+    background-image: url(../images/pattern.jpg);
     background-repeat: repeat-y;
     margin-top: 40px;
 }

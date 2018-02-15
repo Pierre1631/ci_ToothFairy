@@ -11,15 +11,15 @@
 <body>
 	<div class="container" id="header">
 		<img src="<?php echo base_url('assets/images/Tenant1Logo.png'); ?>" alt="responsive image" class="img-responsive pull-left" width="120px"/>
-		<h1 id="adj"><b>DENTAL </b>CLINIC</h1>				
+		<h1 id="adj"><b>DENTAL </b>CLINIC</h1>
 		<small>
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="<?php echo site_url('tenant1controller/register_view'); ?>"><span class="glyphicon glyphicon-user"></span> <b>SIGN UP</b></a></li>
 			<li><a href="<?php echo site_url('tenant1controller/login_view'); ?>"><span class="glyphicon glyphicon-log-in"></span> <b>LOGIN</b></a></li>
-    	</ul>	
-		</small>	
+    	</ul>
+		</small>
 	</div>
-	
+
 	<div class="container">
 		<nav>
 			<ul class="nav navbar-nav">
@@ -44,7 +44,7 @@
 						<?php
 							$success_msg = $this->session->flashdata('success_msg');
 							$error_msg = $this->session->flashdata('error_msg');
-							
+
 							if ($success_msg) {
 								?>
 									<div class="alert alert-success">
@@ -77,7 +77,7 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<div class="container" id="footer">
 		<div class="col-md-12">
 			ToothFairy &copy; 2018, All Right Reserved

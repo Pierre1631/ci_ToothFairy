@@ -5,10 +5,6 @@ class Tenant1Controller extends CI_Controller {
 		parent:: __construct();
 		$this->load->model('users_model');
 	}
-	public function index()
-	{
-		$this->load->view('Tenant1Homepage');
-	}
 	public function register_user() {
 		$user=array(
 	    	'UserFirstName'=>$this->input->post('UserFirstName'),
@@ -27,13 +23,16 @@ class Tenant1Controller extends CI_Controller {
 	  		$this->session->set_flashdata('success_msg', 'Registered successfully. Now login to your account.');
 	  		redirect('Tenant1Controller/login_view');
 		}
-		else{ 
+		else{
 	  		$this->session->set_flashdata('error_msg', 'Error occured, Try again.');
 	  		redirect('Tenant1Controller');
 		}
 	}
 	public function login_view() {
-		$this->load->view("login_view");
+		$data['title'] = 'Tooth Fairy Log In';
+		$this->load->view('home/head_tenant1', $data);
+		$this->load->view("home/login_view");
+		$this->load->view('home/footer_tenant1');
 	}
 	public function register_view() {
 		$this->load->view("register_view");
