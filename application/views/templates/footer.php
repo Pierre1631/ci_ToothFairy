@@ -1,25 +1,23 @@
+
 <!--- Footer -->
 
 <div id="footer">
   <div class="container">
-  <div class="row">
-      <div class="col-xs-6 footer-para">
-        <ul>
-        <li> <a href="#!">About Us</a></li> 
-        <li> <a href="#!">Legal</a></li> 
-        <li> <a href="#!">FAQs</a></li> 
-      </ul>
+          <i class="fa fa-map-marker"></i>
+          <span>Manila, Philippines</span><br>
+          <i class="fa fa-phone"></i>
+          <span>0912 345 6789</span><br>
+          <i class="fa fa-envelope"></i>
+          <a href="mailto:support@company.com"><span>support@company.com</span></a></p>
+        <br>
         <p>© The Creator All right reserved.</p>
-         
        </div>
-      <div class="col-xs-6 text-right">
-        <a href=""><i class="fa fa-facebook"></i></a>
-        <a href=""><i class="fa fa-twitter"></i></a>
-        <a href=""><i class="fa fa-skype"></i></a>
+
+      
       </div>
-    </div>
   </div>
 </div>
+
 
 
 
