@@ -1,10 +1,16 @@
-<!DOCTYPE Html>
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<title><?php echo $title ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title><?php echo $title ?></title>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/custom.css'); ?>" />
+	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+
 	<link rel="stylesheet" href="assets\font-awesome.min.css">
 	<link rel="stylesheet" href="assets\css\bootstrap.min.css">
 	<link rel="stylesheet" href="assets\css\style.css">
@@ -16,10 +22,5 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 	<link rel="stylesheet" href="assets/css/style_login.css">
-
-	<!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
 </head>
+

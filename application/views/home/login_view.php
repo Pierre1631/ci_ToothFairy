@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-xs-3 header-logo">
 				<br>
-				<a href="index.html"><img src="assets/images/logo3.png" alt="logo" class="img-responsive logo"></a>
+				<img src="assets/images/logo3.png" alt="logo" class="img-responsive logo">
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@
 										<?php
 									}
 									?>
-									<form role="form" method="post" action="<?php echo site_url('tenant1controller/login_user'); ?>">
+									<form role="form" method="post" action="<?php echo site_url('Home/login_user'); ?>">
 										<fieldset >
 											<div class="form-group">
 												<input class="form-control" placeholder="Email" name="UserEmail" type="email">
@@ -54,8 +54,7 @@
 										</fieldset>
 									</form>
 									<br>
-									<center><a style="color:#3a9dca" href="<?php echo site_url('tenant1controller/register_view'); ?>">Forget Password?</a></center>
-									<center><b style="color:#000">No account yet?</b> <br><a style="color:#3a9dca" href="<?php echo site_url('tenant1controller/register_view'); ?>">Register here</a></center>
+									<center><b style="color:#000">No account yet?</b> <br><a style="color:#3a9dca" href="<?php echo site_url('Home/register_view'); ?>">Register here</a></center>
 								</div>
 							</div>
 						</div>

@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-xs-3 header-logo">
 				<br>
-				<a href="index.html"><img src="assets/images/logo3.png" alt="logo" class="img-responsive logo"></a>
+				<img src="assets/images/logo3.png" alt="logo" class="img-responsive logo">
 			</div>
 		</div>
 	</div>
@@ -18,10 +18,10 @@
 				<div class="row">
 					<div class="login-caption clearfix">
 						<div class="login-heading text-center">
-							<h2>Sign In</h2>
+							<h2>Sign Up</h2>
 						</div>
 						<div class="col-md-6 col-md-offset-3 login-contact-form">
-							<h3>LOG IN</h3>
+							<h3>REGISTER</h3>
 							<div class="panel-body">
 			          <?php
 			            $error_msg = $this->session->flashdata('error_msg');
@@ -29,7 +29,7 @@
 			              echo $error_msg;
 			            }
 			            ?>
-			            <form role="form" method="post" action="<?php echo site_url('tenant1controller/register_user'); ?>">
+			            <form role="form" method="post" action="<?php echo site_url('Home/register_user'); ?>">
 			              <fieldset>
 			                <div class="form-group">
 			                  <input class="form-control" placeholder="First name" name="UserFirstName" type="text">
@@ -59,7 +59,7 @@
 			              </fieldset>
 			            </form>
 			            <br>
-			            <center><b style="color:#000">Already registered ?</b> <br><a style="color:#3a9dca" href="<?php echo site_url('tenant1controller/login_view'); ?>">Login here</a></center>
+			            <center><b style="color:#000">Already registered ?</b> <br><a style="color:#3a9dca" href="<?php echo site_url('Home/login_view'); ?>">Login here</a></center>
 			          </div>
 							</div>
 						</div>

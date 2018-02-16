@@ -8,6 +8,6 @@ class Login_view extends CI_Controller {
 
 		$data['title'] = 'Tooth Fairy Log in';
 		$this->load->view('home/head_tenant1',$data);
-		$this->load->view('home/login_view');
+		$this->load->view('home/register_view');
   }
 }
