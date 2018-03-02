@@ -8,13 +8,15 @@
 <meta name="author" content="">
 
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="assets/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.css">
-<link rel="stylesheet" type="text/css"  href="assets/css/style.css">
-<link rel="stylesheet" type="text/css" href="assets/css/prettyPhoto.css">
+<link rel="stylesheet" type="text/css"  href="assetsadmin/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assetsadmin/fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css"  href="assetsadmin/css/style.css">
+<link rel="stylesheet" type="text/css" href="assetsadmin/css/prettyPhoto.css">
+<link rel="stylesheet" type="text/css" href="assetsadmin/css/benchnine.css">
+<link rel="stylesheet" type="text/css" href="assetsadmin/css/OpenSanscss">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-<link rel="stylesheet" href="assets/css/style_login.css">
+<script type="text/javascript" src="assetsadmin/js/modernizr.custom.js"></script>
+<link rel="stylesheet" href="assetsadmin/css/style_login.css">
 </head>
 
 
@@ -75,7 +77,7 @@
                     <input type="password" name="UserPass"/>
                     <br />
 
-            
+
 
                     <div class="action_btns">
                         <div class="one_half">
@@ -94,7 +96,7 @@
             <div class="user_register">
                 <form>
                 <label>  Last Name:</label> <input type="text" name="UserLastName" />
-                <label>  First Name:</label> <input type="text" name="UserFirstName" /> 
+                <label>  First Name:</label> <input type="text" name="UserFirstName" />
                 <label>  Middle Name:</label> <input type="text" name="UserMiddleName" />
                <label> Email: </label><input type="text" name="UserEmail" />
                <label> Password: </label><input type="Password" name="UserPass" />
@@ -113,8 +115,8 @@
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://andwecode.com/wp-content/uploads/2015/10/jquery.leanModal.min_.js'></script>
-<script  src="assets/js/login.js"></script>
- 
+<script  src="assetsadmin/js/login.js"></script>
+
       </div>
     </div>
   </div>
