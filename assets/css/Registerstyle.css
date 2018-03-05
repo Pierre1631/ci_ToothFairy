@@ -1,0 +1,185 @@
+.Header{
+	width: 60%;
+	margin: 60px 50px 0px 220px;
+	color: black;
+	background: white;
+	text-align: center;
+	border: 2px solid white;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+  font-family: Montserrat;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	box-shadow: 0px 0px 5px 0px;
+}
+.asterisk{
+	color: red;
+}
+.letter{
+	color: #59A8D9;
+}
+.optradio{
+	margin-left: 210px;
+}
+.btn{
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+	font-family: Montserrat;
+	height: 50px;
+	width: 120px;
+	background: #034C8C;
+	margin: 35px 0px 0px 305px;
+}
+.body{
+	width: 60%;
+	margin: 0px 213px 0px 220px;
+	background: white;
+	text-align: left;
+	border: 2px solid white;
+	padding-left: 40px;
+	box-shadow: 0px 0px 5px 0px;
+	height: 860px;
+}
+.labelclass{
+	font-family: Montserrat;
+	color: gray;
+	margin: 0px 0px 0px 200px;
+}
+.labelclass1{
+	font-family: Montserrat;
+	color: gray;
+	margin: 0px 0px 0px 128px;
+}
+.labelclass3{
+	font-family: Montserrat;
+	color: gray;
+	margin: 0px 0px 0px 142px;
+}
+.labelclass4{
+	font-family: Montserrat;
+	color: gray;
+	margin: 0px 0px 0px 210px;
+}
+.labelclass5{
+	font-family: Montserrat;
+	color: gray;
+	margin: 0px 0px 0px 155px;
+}
+.labelclass6{
+	font-family: Montserrat;
+	color: gray;
+	margin: 0px 0px 0px 210px;
+}
+.labelclass7{
+	font-family: Montserrat;
+	color: gray;
+	margin: 0px 0px 0px 228px;
+}
+.labelclass8{
+	font-family: Montserrat;
+	color: gray;
+	margin: 0px 0px 0px 210px;
+}
+.labelclass9{
+	font-family: Montserrat;
+	color: gray;
+	margin: 0px 0px 0px 140px;
+}
+.form-group{
+	margin-top: 30px;
+	font-family: Montserrat;
+	letter-spacing: 1px;
+	font-size: 12px;
+	color:gray;
+	font-weight: bold;
+}
+.box1{
+	margin-left: 108px;
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	width: 65%;
+	height: 35px;
+}
+.box2{
+	margin-left: 110px;
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	width: 65%;
+	height: 35px;
+}
+.box3{
+	margin-left: 91px;
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	width: 65%;
+	height: 35px;
+}
+.box4{
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	margin-left: 133px;
+	height: 35px;
+	width: 65%;
+}
+.box5{
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	margin-left: 95px;
+	width: 21%;
+	height: 35px;
+}
+.box6{
+	margin-left: 1px;
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	width: 21%;
+	height: 35px;
+}
+.box7{
+	margin-left: 1px;
+	background-color: #DCDCDC;
+	width: 21%;
+	border: 1px solid white;
+	height: 33px;
+}
+.box8{
+	margin-left: 68px;
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	width: 65%;
+	height: 35px;
+}
+
+.Emailbox{
+	margin-left: 85px;
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	width: 65%;
+	height: 35px;
+}
+.userbox{
+	margin-left: 113px;
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	width: 65%;
+	height: 35px;
+}
+.passbox{
+	margin-left: 115px;
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	width: 65%;
+	height: 35px;
+}
+.confbox{
+	margin-left: 55px;
+	background-color: #DCDCDC;
+	border: 1px solid white;
+	width: 65%;
+	height: 35px;
+}
+::placeholder{
+	color: #034C8C;
+	opacity: 1;
+	font-family: Montserrat;
+}
