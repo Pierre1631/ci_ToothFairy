@@ -15,7 +15,7 @@
 		<div style="background-color: #146eb4">
 			<div class="container">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<?php echo site_url('userentity/register_view'); ?>" data-target="#RegisterModal" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> <b>SIGN UP</b></a></li>
+					<li><a href="<?php echo site_url('userentity/register_view'); ?>"><span class="glyphicon glyphicon-user"></span> <b>SIGN UP</b></a></li>
 					<li><a href="<?php echo site_url('userentity/login_view'); ?>" data-target="#LoginModal" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> <b>LOGIN</b></a></li>
 				</ul>
 			</div>

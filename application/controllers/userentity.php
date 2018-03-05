@@ -25,8 +25,8 @@ class userentity extends CI_Controller {
 		$email_check=$this->user_model->email_check($user['UserEmail']);
 		if($email_check){
 	  		$this->user_model->register_user($user);
-	  		$this->session->set_flashdata('success_msg', 'Registered successfully. Now login to your account.');
-	  		redirect('userentity/login_view');
+	  		$this->session->set_flashdata('success_msg', 'Registered successfully, Dashboard under construction.');
+	  		redirect('userentity/register_view');
 		}
 		else{ 
 	  		$this->session->set_flashdata('error_msg', 'Email already used, Please try again.');
@@ -56,7 +56,9 @@ class userentity extends CI_Controller {
 	    }
 	}
 	public function register_view() {
-		$this->load->view("Tenant/register_modal");
+		$this->load->view('Tenant/tenant_header');
+		$this->load->view('Tenant/register_form');
+		$this->load->view('Tenant/tenant_footer');
 	}
 	public function login_view() {
 		$this->load->view("Tenant/login_modal");

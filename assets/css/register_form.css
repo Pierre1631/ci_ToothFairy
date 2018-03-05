@@ -1,0 +1,141 @@
+.banner {
+    background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(../images/regimg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 375px;
+}
+.heading {
+    text-align: center;
+}
+.heading h1 {
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-size: 40px;
+    color: #ff9900;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 2em;
+}
+.heading h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #146eb4;
+}
+li {
+	list-style-type:none;
+}
+.cont {
+    padding: 5em 0;
+}
+.container_1 {
+	width: 710px;
+    margin: auto;
+    padding: 30px 30px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 40px #aaa;
+    transition: all 0.5s;
+    box-shadow: 0px 1px 8px 0px rgba(158, 158, 158, 0.75);
+}
+input[type="text"] {
+    padding: 7px 10px;
+	box-sizing: border-box;
+	background-color: rgba(216, 216, 216, 0.63);
+	border: none;
+	width: 99%;
+    color: #0f0e10;
+}
+select {
+	width: 99%;
+    padding: 7px 10px;
+	background-color: rgba(216, 216, 216, 0.63);
+	border: none;
+}
+ul.field-list li {
+    margin: 15px 0px;
+}
+label.form-label {
+    display: inline-block;
+    width: 30%;
+	font-weight: 400;
+	letter-spacing: 1px;
+    vertical-align: top;
+}
+label.form-sub-label1 {
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    min-height: 14px;
+    font-size: 14px;
+	font-weight: 500;
+    
+    letter-spacing: 1px;
+}
+.form-input {
+    display: inline-block;
+    width: 69%;
+}
+.dob select {
+    width: 33%;
+}
+span.form-sub-label {
+    position: relative;
+}
+span.form-sub-label input[type="text"] {
+    margin: 10px 0px 20px;
+	width: 49%;
+}
+label.form-sub-label1 {
+    position: absolute;
+    bottom: -35px;
+    left: 45px;
+    min-height: 14px;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-family: calibri;
+}
+input.year {
+	width: 31% !important;
+   	padding: 6px;
+}
+input[type="email"] {
+	padding: 7px;
+	background-color: rgba(216, 216, 216, 0.63);
+	border: 0;
+	width: 99%;
+    color: #0f0e10;
+}
+input[type="password"] {
+	padding: 7px;
+	background-color: rgba(216, 216, 216, 0.63);
+	border: 0;
+	width: 99%;
+	color: #0f0e10;
+}
+.asterisk{
+	color: red;
+}
+
+.optradio{
+	margin-left: 210px;
+}
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    padding: 10px 25px;
+    margin-top: 25px;
+    background-color: #146eb4;
+    color: white;
+    border:none;
+    outline:none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: 0;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #ff9900;
+    color: white;
+}
+::placeholder{
+	color: #024d88;
+}
