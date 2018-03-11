@@ -34,5 +34,5 @@
 	</form>
 </div>
 <div class="modal-footer">
-	<center><b>Not registered ?</b> <br><a href="<?php echo site_url('userentity/register_view'); ?>" data-toggle="modal" data-target="#RegisterModal" data-dismiss="modal">Register here</a></center>
+	<center><b>Not registered ?</b> <br><a href="<?php echo site_url('userentity/register_view'); ?>">Register here</a></center>
 </div>

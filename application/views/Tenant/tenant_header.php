@@ -42,14 +42,14 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="">
+						<a class="navbar-brand" href="<?php echo site_url('userentity'); ?>">
 							<img src="<?php echo base_url('assets/images/tenantlogo.png'); ?>" alt="responsive image" class="img-responsive pull-left" width="145"/>
 						</a>
 					</div>
 					<div class="collapse navbar-collapse" id="headercollapse">
 						<nav>
 							<ul class="nav navbar-nav" id="adj">
-								<li><a href=""><b>HOME</b></a></li>
+								<li><a href="<?php echo site_url('userentity'); ?>"><b>HOME</b></a></li>
 								<li><a href=""><b>ABOUT US</b></a></li>
 								<li><a href=""><b>DENTISTS</b></a></li>
 								<li><a href=""><b>LOCATION</b></a></li>
