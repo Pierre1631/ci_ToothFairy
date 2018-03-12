@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Now Ui Kit by Creative Tim</title>
+    <title>Tooth Fairy</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" href="index" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+                <a class="navbar-brand" href="#" rel="tooltip" title="Designed by ANC. Coded by Wisdom Tooth" data-placement="bottom" target="_blank">
                     Tooth Fairy
                 </a>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <p>Services</p>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -50,7 +50,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <p>User</p>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -59,19 +59,19 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="#" target="_blank">
                             <i class="fa fa-twitter"></i>
                             <p class="d-lg-none d-xl-none">Twitter</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="#" target="_blank">
                             <i class="fa fa-facebook-square"></i>
                             <p class="d-lg-none d-xl-none">Facebook</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="#" target="_blank">
                             <i class="fa fa-instagram"></i>
                             <p class="d-lg-none d-xl-none">Instagram</p>
                         </a>
@@ -87,114 +87,205 @@
             </div>
             <div class="container">
                 <div class="content-center brand">
-                    <img class="n-logo" src="assets/img/now-logo.png" alt="">
+                    <img class="n-logo" src="" alt="">
                     <h1 class="h1-seo">TOOTH FAIRY</h1>
-                    <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+                    <h3>Where Great Smile starts here.</h3>
                 </div>
-                <h6 class="category category-absolute">Designed by
-                    <a href="http://invisionapp.com/" target="_blank">
-                        <img src="assets/img/invision-white-slim.png" class="invision-logo" />
-                    </a>. Coded by
-                    <a href="https://www.creative-tim.com" target="_blank">
-                        <img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo" />
-                    </a>.</h6>
             </div>
         </div>
         <div class="main">
             <div class="section section-images">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="hero-images-container">
-                                <img src="assets/img/hero-image-1.png" alt="">
-                            </div>
-                            <div class="hero-images-container-1">
-                                <img src="assets/img/hero-image-2.png" alt="">
-                            </div>
-                            <div class="hero-images-container-2">
-                                <img src="assets/img/hero-image-3.png" alt="">
-                            </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card card-tasks">
+                        <div class="card-header">
+                          <h5 class="card-category">Backend development</h5>
+                          <h4 class="card-title">Tasks</h4>
+                        </div>
+                        <div class="card-body">
+                          <div class="table-full-width table-responsive">
+                            <table class="table">
+                              <tbody>
+                                  <tr>
+                                      <td>
+                                          <div class="form-check">
+                                              <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox" checked="">
+                                                  <span class="form-check-sign"></span>
+                                              </label>
+                                          </div>
+                                      </td>
+
+                                      <td class="text-left">Monitor Databases</td>
+                                      <td class="td-actions text-right">
+                                          <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
+                                              <i class="now-ui-icons ui-2_settings-90"></i>
+                                          </button>
+                                          <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
+                                              <i class="now-ui-icons ui-1_simple-remove"></i>
+                                          </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <div class="form-check">
+                                              <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox">
+                                                  <span class="form-check-sign"></span>
+                                              </label>
+                                          </div>
+                                      </td>
+
+                                      <td class="text-left">Disseminate Web Updates</td>
+                                      <td class="td-actions text-right">
+                                          <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
+                                              <i class="now-ui-icons ui-2_settings-90"></i>
+                                          </button>
+                                          <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
+                                              <i class="now-ui-icons ui-1_simple-remove"></i>
+                                          </button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <div class="form-check">
+                                              <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox" checked="">
+                                                  <span class="form-check-sign"></span>
+                                              </label>
+                                          </div>
+                                      </td>
+
+                                      <td class="text-left">Provide Tech Support to 123 Corp.'s system
+                                      </td>
+                                      <td class="td-actions text-right">
+                                          <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
+                                              <i class="now-ui-icons ui-2_settings-90"></i>
+                                          </button>
+                                          <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
+                                              <i class="now-ui-icons ui-1_simple-remove"></i>
+                                          </button>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <hr>
+                          <div class="stats">
+                            <i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
+                          </div>
                         </div>
                     </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-header">
+                              <h5 class="card-category">All Persons List</h5>
+                              <h4 class="card-title"> Tenants' Stats</h4>
+                          </div>
+                          <div class="card-body">
+                              <div class="table-responsive">
+                                <table class="table">
+                                  <thead class=" text-primary">
+                                    <th >
+                                      Name
+                                    </th>
+                                    <th >
+                                      Company
+                                    </th>
+                                    <th >
+                                      City
+                                    </th>
+                                    <th  class="text-right" >
+                                      Subscription
+                                    </th>
+                                  </thead>
+                                  <tbody>
+                                    <tr >
+                                      <td >
+                                        Colleen Nagera
+                                      </td>
+                                      <td >
+                                        123 Corp.
+                                      </td>
+                                      <td >
+                                        Manila
+                                      </td>
+                                      <td  class="text-right" >
+                                        1,000 php/ month
+                                      </td>
+                                    </tr>
+                                    <tr >
+                                      <td >
+                                        Darren Azure
+                                      </td>
+                                      <td >
+                                        ABC Services
+                                      </td>
+                                      <td >
+                                        Manila
+                                      </td>
+                                      <td  class="text-right" >
+                                        1,200 php/ month
+                                      </td>
+                                    </tr>
+                                    <tr >
+                                      <td >
+                                        Aldwin Sanchez
+                                      </td>
+                                      <td >
+                                        QWERTY Inc.
+                                      </td>
+                                      <td >
+                                        Imus
+                                      </td>
+                                      <td  class="text-right" >
+                                        1,400 php/ month
+                                      </td>
+                                    </tr>
+                                    <tr >
+                                      <td >
+                                        Kenneth Domingo
+                                      </td>
+                                      <td >
+                                        UIOP Ltd.
+                                      </td>
+                                      <td >
+                                        Bacoor
+                                      </td>
+                                      <td  class="text-right" >
+                                        1,300 php/ month
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
             </div>
-            <div class="section section-download" id="#download-section" data-background-color="black">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="text-center col-md-12 col-lg-8">
-                            <h3 class="title">Do you love this Bootstrap 4 UI Kit?</h3>
-                            <h5 class="description">Cause if you do, it can be yours for FREE. Hit the button below to navigate to Creative Tim or Invision where you can find the kit in HTML or Sketch/PSD format. Start a new project or give an old Bootstrap project a new look!</h5>
-                        </div>
-                        <div class="text-center col-md-12 col-lg-8">
-                            <a href="https://www.creative-tim.com/product/now-ui-kit" class="btn btn-primary btn-lg btn-round" role="button">
-                                Download HTML
-                            </a>
-                            <a href="https://www.invisionapp.com/now" target="_blank" class="btn btn-primary btn-lg btn-simple btn-round" role="button">
-                                Download PSD/Sketch
-                            </a>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="row text-center mt-5">
-                        <div class="col-md-8 ml-auto mr-auto">
-                            <h2>Want more?</h2>
-                            <h5 class="description">We've just launched
-                                <a href="http://demos.creative-tim.com/now-ui-kit-pro/presentation.html" target="_blank">Now UI Kit PRO</a>. It has a huge number of components, sections and example pages. Start Your Development With A Badass Bootstrap 4 UI Kit.</h4>
-                        </div>
-                        <div class="col-md-12">
-                            <a href="http://demos.creative-tim.com/now-ui-kit-pro/presentation.html" class="btn btn-neutral btn-round btn-lg" target="_blank">
-                                <i class="now-ui-icons arrows-1_share-66"></i> Upgrade to PRO
-                            </a>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="row justify-content-md-center sharing-area text-center">
-                        <div class="text-center col-md-12 col-lg-8">
-                            <h3>Thank you for supporting us!</h3>
-                        </div>
-                        <div class="text-center col-md-12 col-lg-8">
-                            <a target="_blank" href="https://www.twitter.com/creativetim" class="btn btn-neutral btn-icon btn-twitter btn-round btn-lg" rel="tooltip" title="Follow us">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-neutral btn-icon btn-facebook btn-round btn-lg" rel="tooltip" title="Like us">
-                                <i class="fa fa-facebook-square"></i>
-                            </a>
-                            <a target="_blank" href="https://www.linkedin.com/company-beta/9430489/" class="btn btn-neutral btn-icon btn-linkedin btn-lg btn-round" rel="tooltip" title="Follow us">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a target="_blank" href="https://github.com/creativetimofficial/now-ui-kit" class="btn btn-neutral btn-icon btn-github btn-round btn-lg" rel="tooltip" title="Star on Github">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <footer class="footer" data-background-color="black">
             <div class="container">
                 <nav>
                     <ul>
                         <li>
-                            <a href="https://www.creative-tim.com">
-                                Creative Tim
+                            <a href="#">
+                                Tooth Fairy
                             </a>
                         </li>
                         <li>
-                            <a href="http://presentation.creative-tim.com">
+                            <a href="#">
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a href="http://blog.creative-tim.com">
+                            <a href="#">
                                 Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                                MIT License
                             </a>
                         </li>
                     </ul>
@@ -204,8 +295,8 @@
                     <script>
                         document.write(new Date().getFullYear())
                     </script>, Designed by
-                    <a href="http://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-                    <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                    <a href="#" target="_blank">ANC</a>. Coded by
+                    <a href="#" target="_blank">Wisdom Tooth</a>.
                 </div>
             </div>
         </footer>
