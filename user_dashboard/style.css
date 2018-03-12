@@ -1,0 +1,291 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.button{
+  height: 38px;
+  background: #dc7633;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.dark{
+  padding: 15px;
+  background: #7f8c8d;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*header*/
+header ul{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background:  #424949 ;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom:  #dc7633  3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color:  #dc7633;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/*showcase*/
+#showcase{
+  min-height: 400px;
+  background: url('show.jpg') no-repeat 0 -400px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+/*newsletter*/
+#newsletter{
+  padding: 15px;
+  color: #ffffff;
+  background: #7f8c8d;
+}
+
+#newsletter h1{
+  float: left;
+}
+
+#newsletter form{
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  weight: 250px;
+}
+
+/*boxes*/
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width: 90px;
+}
+
+/*about us- sidebar*/
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+/*about us- maincol*/
+article#main-col{
+  float: left;
+  width: 65%;
+}
+
+/*services*/
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+/*services- sidebar*/
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width: 90%;
+  padding: 5px;
+}
+/*footer*/
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #424949;
+  text-align: center;
+}
+
+/*media queries*/
+@media(max-width: 768px) {
+  header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+  header{
+    padding-bottom:20px;
+  }
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newletter button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input [type="email"]{
+    width:100%
+    margin-bottom:5px;
+  }
+}
+
+
+#section-left{
+  width: 28%;
+  float: left;
+  height: 681px;
+  background-color: #907a6c;
+  color: #fff;
+  text-align: center;
+}
+#section-left .section .logo{
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.box-img{
+	border-radius: 94px;
+	width: 165px;
+	height: 165px;
+  margin-top: 10px;
+}
+.intro hr{
+  width: 4cm;
+  display: block;
+  height: 2px;
+  border: 0px;
+  border-top: 2px solid;
+}
+.address{
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+.dob{
+  text-decoration: overline underline;
+}
+.intro .content{
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+#contact{
+  margin-top: 40px;
+}
+h1{
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+#section-right{
+  width: 70%;
+  float: right;
+  height: 52.625%;
+  padding: 6px;
+  margin-top: 30px;
+}
+#section-right .section{
+  margin: 0 0 30px 0;
+}
+td{
+  padding: 7px;
+}
+.wrapper .title{
+  background-color: #cdc0b0;
+  color: #ffffff;
+  padding: 0.1px;
+  font-size: 20px;
+  font-variant: small-caps;
+  letter-spacing: 0.1cm;
+  font-weight: bold;
+  border-bottom: 2px solid #f2f2f2;
+}
+a:link{
+  color: #fff;
+  text-decoration: none;
+}
+a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+a:active{
+  color: #fff;
+  text-decoration: none;
+}
+@media(max-width: 768px){
+  #section-left, #section-left .section .logo, #section-left .box-img .intro hr .content, #contact .address, #section-right, #section-right .section .wrapper{
+ float:left;
+ text-align:center;
+ width:100%;
+}
+}
