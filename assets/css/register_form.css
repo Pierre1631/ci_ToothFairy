@@ -52,6 +52,9 @@ select {
 ul.field-list li {
     margin: 15px 0px;
 }
+label {
+    margin: 0;
+}
 label.form-label {
     display: inline-block;
     width: 30%;
@@ -118,7 +121,7 @@ input[type="password"] {
 .optradio{
 	margin-left: 210px;
 }
-input[type="submit"] {
+.tysubmit {
     display: block;
     margin: auto;
     padding: 10px 25px;
@@ -132,7 +135,7 @@ input[type="submit"] {
     outline: 0;
     cursor: pointer;
 }
-input[type="submit"]:hover {
+.tysubmit:hover {
     background-color: #ff9900;
     color: white;
 }
