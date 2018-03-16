@@ -73,7 +73,9 @@
                 <div class="card card-login card-plain">
                     <form class="form" method="post" action="login/login_user">
                         <div class="header header-primary text-center">
-                            
+                            <div class="logo-container">
+                                <img src="assets/img/now-logo.png" alt="">
+                            </div>
                         </div>
                         <div class="content">
                            <?php
