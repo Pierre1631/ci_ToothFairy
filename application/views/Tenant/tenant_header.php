@@ -14,16 +14,10 @@
 	<div class="header">
 		<div style="background-color: #146eb4">
 			<div class="container">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<?php echo site_url('userentity/register_view'); ?>"><span class="glyphicon glyphicon-user"></span> <b>SIGN UP</b></a></li>
-					<li><a href="<?php echo site_url('userentity/login_view'); ?>" data-target="#LoginModal" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> <b>LOGIN</b></a></li>
+				<ul class="siglog">
+					<li><a href="<?php echo site_url('userentity/login_view'); ?>"  class="pull-right" data-target="#LoginModal" data-toggle="modal"><span id="sig" class="glyphicon glyphicon-log-in"></span> <b>LOGIN</b></a></li>
+					<li><a href="<?php echo site_url('userentity/register_view'); ?>" class="pull-right" ><span class="glyphicon glyphicon-user"></span> <b>SIGN UP</b></a></li>
 				</ul>
-			</div>
-		</div>
-		<div class="modal fade" id="RegisterModal" role="dialog">
-		    <div class="modal-dialog">
-		      	<div class="modal-content">
-				</div>
 			</div>
 		</div>
 		<div class="modal fade" id="LoginModal" role="dialog">
@@ -32,8 +26,8 @@
 				</div>
 			</div>
 		</div>
-		<div>
-			<nav class="navbar navbar-default navbar-static-top">
+		<div class="content white">
+			<nav class="navbar navbar-default" role="navigation">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headercollapse">
@@ -48,7 +42,7 @@
 					</div>
 					<div class="collapse navbar-collapse" id="headercollapse">
 						<nav>
-							<ul class="nav navbar-nav" id="adj">
+							<ul class="nav navbar-nav">
 								<li><a href="<?php echo site_url('userentity'); ?>"><b>HOME</b></a></li>
 								<li><a href=""><b>ABOUT US</b></a></li>
 								<li><a href=""><b>DENTISTS</b></a></li>

@@ -10,6 +10,11 @@ class userentity extends CI_Controller {
 		$this->load->view('Tenant/TenantHomepage');
 		$this->load->view('Tenant/tenant_footer');
 	}
+	public function tenant_about(){
+		$this->load->view('Tenant/tenant_header');
+    	$this->load->view('Tenant/user_dashboard');
+    	$this->load->view('Tenant/tenant_footer');
+	}
 	public function register_user() {
         $this->form_validation->set_rules('UserFirstName','UFN','required');
         $this->form_validation->set_rules('UserMiddleName','UMN','required');
@@ -42,28 +47,6 @@ class userentity extends CI_Controller {
 			}
         }
 		
-	}
-	public function login_user(){
-  		$user_login=array(
-	  		'UserEmail'=>$this->input->post('UserEmail'),
-	  		'UserPass'=>sha1($this->input->post('UserPass'))
-    	);
-    	$data=$this->user_model->login_user($user_login['UserEmail'],$user_login['UserPass']);
-  		if($data){
-	        $this->session->set_userdata('UserID',$data['UserID']);
-	        $this->session->set_userdata('UserFirstName',$data['UserFirstName']);
-	        $this->session->set_userdata('UserMiddleName',$data['UserMiddleName']);
-	        $this->session->set_userdata('UserLastName',$data['UserLastName']);
-	        $this->session->set_userdata('UserEmail',$data['UserEmail']);
-	       	$this->session->set_userdata('UserBirthdate',$data['UserBirthdate']);
-	        $this->session->set_userdata('UserContact',$data['UserContact']);
-	        $this->session->set_userdata('UserGender',$data['UserGender']);
-    		echo "Login Successfully! ";
-  		}
-  		else{
-	        $this->session->set_flashdata('error_msg', 'Invalid Username or Password. Please try again.');
-	        redirect("userentity/login_view");
-	    }
 	}
 	public function register_view() {
 		$this->load->view('Tenant/tenant_header');

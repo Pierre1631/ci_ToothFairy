@@ -21,7 +21,7 @@
 			<?php
 		}
 	?>
-	<form role="form" method="post" action="<?php echo site_url('userentity/login_user'); ?>" >
+	<form role="form" method="post" action="<?php echo site_url('Customer_entity/login_user'); ?>" >
 		<div class="form-group">
 			<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
 			<input id="usrname" class="form-control" placeholder="Email" name="UserEmail" type="email" required>
