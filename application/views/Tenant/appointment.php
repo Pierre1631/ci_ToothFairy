@@ -1,29 +1,14 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/register_form.css'); ?>" />
 	<div class="banner"></div>
 		<div class="heading">
-			<h1>sign up</h1>
-			<h3>It's Free</h3>
+			<h1>Appoint My Dentist</h1>
 		</div>
 	<div class="cont">
 		<div class="container_1">
-			<?php
-				$success_msg = $this->session->flashdata('success_msg');
-				if ($success_msg) {
-					?>
-						<div class="alert alert-success">
-							<?php echo $success_msg; ?>
-						</div>
-					<?php
-				}
-				$error_msg = $this->session->flashdata('error_msg');
-				if ($error_msg) {
-					?>
-						<div class="alert alert-danger">
-							<?php echo $error_msg; ?>
-						</div>
-					<?php
-				}
-			?>
+			<div class="heading">
+				<h2>Please Enter Patients Details</h2>
+				<p>Fill the form below and submit your query we will contact you as soon as possible.</p>
+			</div>
 			<form method="post" action="<?php echo site_url('userentity/register_user'); ?>">
 				<ul class="field-list">
 					<li>

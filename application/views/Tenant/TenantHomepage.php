@@ -1,3 +1,4 @@
+	
 	<div id="FirstCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#FirstCarousel" data-slide-to="0" class="active"></li>
@@ -5,19 +6,21 @@
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="<?php echo base_url('assets/images/notsure1.jpg'); ?>" alt="responsive image"/>
-				<div class="carousel-caption">
-					<h3>to edit this go to <span>line 10.</span></h3>
-					<p>application/views/TenantHomepage.php</p>
-					<h6>Lorem ipsum dolor sit amet  consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</h6>
+				<div class="container">
+					<div class="carousel-caption">
+						<h3>to edit this go to <span>line 10.</span></h3>
+						<p>application/views/TenantHomepage.php</p>
+						<h6>Lorem ipsum dolor sit amet  consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</h6>
+					</div>	
 				</div>
 			</div>
-			<div class="item">
-				<img src="<?php echo base_url('assets/images/notsure2.png'); ?>" alt="responsive image"/>
-				<div class="carousel-caption">
-					<h3>to edit this go to <span>line 18.</span></h3>
-					<p>application/views/TenantHomepage.php</p>
-					<h6>Lorem ipsum dolor sit amet  consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</h6>
+			<div class="item item1">
+				<div class="container">
+					<div class="carousel-caption">
+						<h3>to edit this go to <span>line 18.</span></h3>
+						<p>application/views/TenantHomepage.php</p>
+						<h6>Lorem ipsum dolor sit amet  consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</h6>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -35,6 +38,7 @@
 		<div class="agileits-about-btm">
 			<h3 class="heading-agileinfo">Welcome To Our Dental Clinic!<span>To edit this go to line 36 of views/TenantHomepage.php</span></h3>
 			<div class="container">
+				<div class="me-flex">
 					<div class="col-md-4 col-sm-4 ab1 agileits-about-grid1">
 						<h4 class="agileinfo-head">To edit this go to line 40</h4>
 						<p>To edit this go to line 41</p>
@@ -63,6 +67,7 @@
 						<h5>line 64</h5>
 					</div>
 					<div class="clearfix"></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -112,86 +117,26 @@
 				</div>
 				<div class="clearfix"></div>
 			</div>
-			<div class="col-md-4">
-				<div class="grid1">
-					<h4>Line 122</h4>
-					<p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+			<div class="services-bottom-grids">
+				<div class="col-md-4">
+					<div class="grid1">
+						<h4>Line 122</h4>
+						<p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="grid1">
-					<h4>Line 129</h4>
-					<p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+				<div class="col-md-4">
+					<div class="grid1">
+						<h4>Line 129</h4>
+						<p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="grid1">
-					<h4>Line 136</h4>
-					<p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+				<div class="col-md-4">
+					<div class="grid1">
+						<h4>Line 136</h4>
+						<p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+					</div>
 				</div>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
-
-
-
-	<div class="tesimonials">
-		<div class="tesimonials_tp">
-			<div class="container">
-				<h3 class="heading-agileinfo te">What Clients Say<span class="te">To edit this go to line 142 of views/TenantHomepage.php</span></h3>
-				<div class="col-md-offset-2 col-md-8">
-					<div id="SecondCarousel" class="carousel slide two" data-ride="carousel">
-						<ol class="carousel-indicators two">
-							<li data-target="#SecondCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#SecondCarousel" data-slide-to="1"></li>
-							<li data-target="#SecondCarousel" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="item active">
-								<blockquote>
-									<div class="col-sm-3 test_img">
-										<img src="<?php echo base_url('assets/images/temp.jpg'); ?>" alt="responsive image"/>
-
-									</div>
-									<div class="col-sm-9 test_img_info">
-										<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
-										<h6>Luwelle</h6>
-									</div>
-								</blockquote>
-							</div>
-							<div class="item">
-								<blockquote>
-									<div class="test_grid">
-										<div class="col-sm-3 text-center test_img">
-											<img src="<?php echo base_url('assets/images/temp.jpg'); ?>" alt="responsive image"/>
-										</div>
-										<div class="col-sm-9 test_img_info">
-											<p>Lorem ipsum dolor sit amet. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
-											<h6>Raymart</h6>
-										</div>
-									</div>
-								</blockquote>
-							</div>
-							<div class="item">
-								<blockquote>
-									<div class="test_grid">
-										<div class="col-sm-3 text-center test_img">
-											<img src="<?php echo base_url('assets/images/temp.jpg'); ?>" alt="responsive image"/>
-										</div>
-										<div class="col-sm-9 test_img_info">
-											<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
-											<h6>Charlone</h6>
-										</div>
-									</div>
-								</blockquote>
-							</div>
-						</div>
-						<a data-slide="prev" href="#SecondCarousel" class="left carousel-control"><i class="glyphicon glyphicon-chevron-left"></i></a>
-						<a data-slide="next" href="#SecondCarousel" class="right carousel-control"><i class="glyphicon glyphicon-chevron-right"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	

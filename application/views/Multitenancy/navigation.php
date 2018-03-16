@@ -13,7 +13,7 @@
       <ul class="nav navbar-nav">
         <li class="hidden"> <a href="#intro"></a> </li>
         <li> <a class="page-scroll" href="login">Log In</a> </li>
-        <li> <a class="page-scroll" href="signup">Sign Up</a> </li>
+        <li> <a class="page-scroll" href="register">Sign Up</a> </li>
         <li> <a class="page-scroll" href="#contact">Contact Us</a> </li>
       </ul>
     </div>
