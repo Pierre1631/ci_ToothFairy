@@ -94,144 +94,122 @@
     <!-- End Navbar -->
     <div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-         <div class="modal-content">
-           <div class="modal-header justify-content-center">
-             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-               <i class="now-ui-icons ui-1_simple-remove"></i>
-             </button>
-             <h4 class="title title-up">Contact Us</h4>
-           </div>
-           <div class="modal-body">
-             <div class="col-md-12 col-md-offset-3">
-               <h3>Leave us a message</h3>
-                 <form name="sentMessage" id="contactForm" novalidate>
-                   <div class="row">
-                     <div class="col-md-8">
-                       <div class="form-group">
-                         <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-                         <p class="help-block text-danger"></p>
-                       </div>
-                     </div>
-                     <div class="col-md-8">
-                       <div class="form-group">
-                         <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-                         <p class="help-block text-danger"></p>
-                       </div>
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="now-ui-icons ui-1_simple-remove"></i>
+            </button>
+            <h4 class="title title-up">Contact Us</h4>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-12 col-md-offset-3">
+              <h3>Leave us a message</h3>
+               <form name="sentMessage" id="contactForm" novalidate>
+                 <div class="row">
+                   <div class="col-md-8">
+                     <div class="form-group">
+                       <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                       <p class="help-block text-danger"></p>
                      </div>
                    </div>
-                   <div class="form-group">
-                     <textarea name="message" id="message" class="form-control" rows="5" placeholder="Message" required></textarea>
-                     <p class="help-block text-danger"></p>
+                   <div class="col-md-8">
+                     <div class="form-group">
+                       <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                       <p class="help-block text-danger"></p>
+                     </div>
                    </div>
-                   <div class="modal-footer">
-                     <button type="button" class="btn btn-success">Send Message</button>
-                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                   </div>
-                 </form>
-               </div>
-             </div>
-           </div>
+                 </div>
+                 <div class="form-group">
+                   <textarea name="message" id="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+                   <p class="help-block text-danger"></p>
+                 </div>
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-success">Send Message</button>
+                   <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                 </div>
+               </form>
+            </div>
+          </div>
         </div>
-     </div>
+      </div>
+    </div>
     <div class="page-header" filter-color="orange">
-        <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
-        <div class="container">
-            <div class="col-md-4 content-center">
-                <div class="card card-login card-plain">
-                    <form class="form" method="post" action="signup/register_user">
-                        <div class="header header-primary text-center">
-                            <div class="logo-container">
-                                <img src="assets/img/now-logo.png" alt="">
-                            </div>
-                        </div>
-                        <div class="content">
-                           <?php
-		                         $success_msg = $this->session->flashdata('success_msg');
-		                         $error_msg = $this->session->flashdata('error_msg');
-		                         if ($success_msg) {
-			                     ?>
-				                   <div class="alert alert-success">
-					                   <?php echo $success_msg; ?>
-                           </div>
-			                     <?php
-		                       }
-		                       if ($error_msg) {
-			                     ?>
-				                   <div class="alert alert-danger">
-					                        <?php echo $error_msg; ?>
-				                   </div>
-			                     <?php
-		                       }
-	                         ?>
-                           <div class="input-group form-group-no-border input-lg">
-                               <span class="input-group-addon">
-                                   <i class="now-ui-icons users_circle-08"></i>
-                               </span>
-                               <input class="form-control" placeholder="Email"type="Email" name="UserEmail" />
-                           </div>
-                           <div class="input-group form-group-no-border input-lg">
-                               <span class="input-group-addon">
-                                   <i class="now-ui-icons text_caps-small"></i>
-                               </span>
-                               <input class="form-control" type="password" placeholder="Password" name="UserPass" />
-                           </div>
-                           <div class="input-group form-group-no-border input-lg">
-                             <span class="input-group-addon">
-                               <i class="now-ui-icons text_caps-small"></i>
-                             </span>
-                             <input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" />
-                           </div>
-                           <small class="help-block text-danger"><?php echo form_error('confirmpassword');?></small>
-                        <div class="footer text-center">
-                           <input class="btn btn-primary btn-round btn-lg btn-block" type="submit" value="Register"/>
-                        </div>
-                       </form>
-	                        </form>
-                      </div>
-                      <div class="pull-left">
-                            <h6>
-                                <a href="login" class="link">Already have an account?</a>
-                            </h6>
-                        </div>
-                        <div class="pull-right">
-                            <h6>
-                                <a href="#pablo" class="link">Need Help?</a>
-                            </h6>
-                        </div>
-                    </form>
+      <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
+      <div class="container">
+        <div class="col-md-4 content-center">
+          <div class="card card-login card-plain">
+            <form class="form" method="post" action="signup/register_user">
+              <div class="header header-primary text-center">
+                <div class="logo-container">
+                  <img src="assets/img/now-logo.png" alt="">
                 </div>
+              </div>
+              <div class="content">
+               <?php
+                 $success_msg = $this->session->flashdata('success_msg');
+                 $error_msg = $this->session->flashdata('error_msg');
+                 if ($success_msg) {
+               ?>
+               <div class="text-success">
+                 <?php echo $success_msg; ?>
+               </div>
+               <?php
+               }
+               if ($error_msg) {
+               ?>
+               <div class="text-danger">
+                      <?php echo $error_msg; ?>
+               </div>
+               <?php
+               }
+               ?>
+                <div class="input-group form-group-no-border input-lg">
+                  <span class="input-group-addon">
+                    <i class="now-ui-icons users_circle-08"></i>
+                  </span>
+                  <input class="form-control" placeholder="Email" type="Email" name="UserEmail" required />
+                </div>
+                <div class="input-group form-group-no-border input-lg">
+                  <span class="input-group-addon">
+                    <i class="now-ui-icons text_caps-small"></i>
+                  </span>
+                  <input class="form-control" type="password" placeholder="Password" name="UserPass" required />
+                </div>
+                <div class="input-group form-group-no-border input-lg">
+                  <span class="input-group-addon">
+                    <i class="now-ui-icons text_caps-small"></i>
+                  </span>
+                  <input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" />
+                </div>
+                <div class="footer text-center">
+                  <input class="btn btn-primary btn-round btn-lg btn-block" type="submit" value="Register"/>
+                </div>
+              </div>  
+            </form>
+            <div class="pull-left">
+              <h6><a href="login" class="link">Already have an account?</a></h6>
             </div>
+            <div class="pull-right">
+              <h6><a href="#pablo" class="link">Need Help?</a></h6>
+            </div>
+          </div>
         </div>
+      </div>
         <footer class="footer">
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Tooth Fairy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Blog
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>, Designed by
-                    <a href="#" target="_blank">ANC</a>. Coded by
-                    <a href="#" target="_blank">Wisdom Tooth</a>.
-                </div>
+          <div class="container">
+            <nav>
+              <ul>
+                <li><a href="#">Tooth Fairy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </nav>
+            <div class="copyright">
+              &copy;<script>document.write(new Date().getFullYear())</script>, Designed by
+              <a href="#" target="_blank">ANC</a>. Coded by
+              <a href="#" target="_blank">Wisdom Tooth</a>.
             </div>
+          </div>
         </footer>
     </div>
 </body>

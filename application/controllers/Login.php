@@ -28,8 +28,8 @@ class Login extends CI_Controller {
 			redirect('Index');
 		}
 		else{
-				$this->session->set_flashdata('error_msg', 'Invalid Username or Password. Please try again.');
-				redirect("login");
+			$this->session->set_flashdata('error_msg', 'Invalid Username or Password. Please try again.');
+			redirect("login");
 		}
 	}
 }
