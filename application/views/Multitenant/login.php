@@ -150,14 +150,14 @@
 		                         $error_msg = $this->session->flashdata('error_msg');
 		                         if ($success_msg) {
 			                     ?>
-				                   <div class="alert alert-success">
+				                   <div class="text-success">
 					                   <?php echo $success_msg; ?>
                            </div>
 			                     <?php
 		                       }
 		                       if ($error_msg) {
 			                     ?>
-				                   <div class="alert alert-danger">
+				                   <div class="text-danger">
 					                        <?php echo $error_msg; ?>
 				                   </div>
 			                     <?php
@@ -167,7 +167,7 @@
                                <span class="input-group-addon">
                                    <i class="now-ui-icons users_circle-08"></i>
                                </span>
-                               <input class="form-control" placeholder="Email"type="Email" name="user" />
+                               <input class="form-control" placeholder="Email" type="Email" name="user" />
                            </div>
                            <div class="input-group form-group-no-border input-lg">
                                <span class="input-group-addon">
@@ -200,17 +200,17 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="home">
                                 Tooth Fairy
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="aboutus">
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="blog">
                                 Blog
                             </a>
                         </li>
