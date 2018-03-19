@@ -25,7 +25,7 @@ class Login extends CI_Controller {
 		$data=$this->user_model->login_user($user_login['UserEmail'],$user_login['UserPass']);
 		if($data){
 			$this->session->set_userdata('user', $_POST['user']);
-			redirect('Index');
+			redirect('TenantDash_Dashboard');
 		}
 		else{
 			$this->session->set_flashdata('error_msg', 'Invalid Username or Password. Please try again.');

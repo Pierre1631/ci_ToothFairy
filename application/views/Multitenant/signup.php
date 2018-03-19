@@ -179,10 +179,56 @@
                   <span class="input-group-addon">
                     <i class="now-ui-icons text_caps-small"></i>
                   </span>
+                  <input class="form-control" type="password" placeholder="Password" name="UserPass" required />
+                </div>
+                <div class="input-group form-group-no-border input-lg">
+                  <span class="input-group-addon">
+                    <i class="now-ui-icons text_caps-small"></i>
+                  </span>
                   <input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" />
                 </div>
                 <div class="footer text-center">
                   <input class="btn btn-primary btn-round btn-lg btn-block" type="submit" value="Register"/>
+                </div>
+              </div>
+            </form>
+            <div class="pull-left">
+              <h6><a href="login" class="link">Already have an account?</a></h6>
+            </div>
+            <div class="pull-right">
+              <h6><a href="#pablo" class="link">Need Help?</a></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="home">
+                                Tooth Fairy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aboutus">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>, Designed by
+                    <a href="#" target="_blank">ANC</a>. Coded by
+                    <a href="#" target="_blank">Wisdom Tooth</a>.
                 </div>
               </div>  
             </form>
