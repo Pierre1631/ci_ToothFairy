@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class AdminDash_Add extends CI_Controller {
+class AdminDash_Messages extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
@@ -14,6 +14,6 @@ class AdminDash_Add extends CI_Controller {
 	public function index()
 	{
 
-    $this->load->view('Multitenancy/AdminDash/add');
+    $this->load->view('Multitenancy/AdminDash/Messages');
   }
 }

@@ -22,16 +22,27 @@
 $user = $this->session->userdata('user');
 ?>
 <body class="">
+  <?php
+    $success_msg= $this->session->flashdata('success_msg');
+    $error_msg= $this->session->flashdata('error_msg');
+
+    if($success_msg){
+      echo "<script type='text/javascript'>alert('$success_msg');</script>";
+    }
+    if($error_msg){
+      echo "<script type='text/javascript'>alert('$error_msg');</script>";
+    }
+   ?>
     <div class="wrapper ">
         <div class="sidebar" data-color="orange">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                <a href="Home" class="simple-text logo-mini">
                     ANC
                 </a>
-                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                <a href="Home" class="simple-text logo-normal">
                     Tooth Fairy
                 </a>
             </div>
@@ -88,7 +99,7 @@ $user = $this->session->userdata('user');
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">User Profile</a>
+                        <a class="navbar-brand" href="TenantDash_Profile">User Profile</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -132,7 +143,7 @@ $user = $this->session->userdata('user');
                                 <p><?php echo $user; ?></p>
                               </a>
                               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Account</a>
+                                  <a class="dropdown-item" href="#">My Profile</a>
                                   <a class="dropdown-item" href="logout">Log out</a>
                               </div>
                           </li>

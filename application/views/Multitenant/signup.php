@@ -141,7 +141,7 @@
             <form class="form" method="post" action="signup/register_user">
               <div class="header header-primary text-center">
                 <div class="logo-container">
-                  <img src="assets/img/now-logo.png" alt="">
+                  <img src="assets/img/now-logo.png"  alt="">
                 </div>
               </div>
               <div class="content">
@@ -168,12 +168,6 @@
                     <i class="now-ui-icons users_circle-08"></i>
                   </span>
                   <input class="form-control" placeholder="Email" type="Email" name="UserEmail" required />
-                </div>
-                <div class="input-group form-group-no-border input-lg">
-                  <span class="input-group-addon">
-                    <i class="now-ui-icons text_caps-small"></i>
-                  </span>
-                  <input class="form-control" type="password" placeholder="Password" name="UserPass" required />
                 </div>
                 <div class="input-group form-group-no-border input-lg">
                   <span class="input-group-addon">
@@ -230,33 +224,10 @@
                     <a href="#" target="_blank">ANC</a>. Coded by
                     <a href="#" target="_blank">Wisdom Tooth</a>.
                 </div>
-              </div>  
-            </form>
-            <div class="pull-left">
-              <h6><a href="login" class="link">Already have an account?</a></h6>
-            </div>
-            <div class="pull-right">
-              <h6><a href="#pablo" class="link">Need Help?</a></h6>
-            </div>
+              </div>
           </div>
         </div>
       </div>
-        <footer class="footer">
-          <div class="container">
-            <nav>
-              <ul>
-                <li><a href="#">Tooth Fairy</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </nav>
-            <div class="copyright">
-              &copy;<script>document.write(new Date().getFullYear())</script>, Designed by
-              <a href="#" target="_blank">ANC</a>. Coded by
-              <a href="#" target="_blank">Wisdom Tooth</a>.
-            </div>
-          </div>
-        </footer>
     </div>
 </body>
 <!--   Core JS Files   -->
@@ -276,9 +247,7 @@
         // the body of this function is in assets/js/now-ui-kit.js
         nowuiKit.initSliders();
     });
-
     function scrollToDownload() {
-
         if ($('.section-download').length != 0) {
             $("html, body").animate({
                 scrollTop: $('.section-download').offset().top

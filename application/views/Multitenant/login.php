@@ -175,7 +175,6 @@
                                </span>
                                <input class="form-control" type="password" placeholder="Password" name="pwd" />
                            </div>
-
                            <div class="footer text-center">
                               <input class="btn btn-primary btn-round btn-lg btn-block" type="submit" value="Login"/>
                            </div>

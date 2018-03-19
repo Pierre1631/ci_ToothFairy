@@ -28,10 +28,10 @@ $user = $this->session->userdata('user');
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                <a href="home" class="simple-text logo-mini">
                     ANC
                 </a>
-                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                <a href="home" class="simple-text logo-normal">
                     Tooth Fairy
                 </a>
             </div>
@@ -88,7 +88,7 @@ $user = $this->session->userdata('user');
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">Dashboard</a>
+                        <a class="navbar-brand" href="TenantDash_Website">Website Management</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -132,10 +132,10 @@ $user = $this->session->userdata('user');
                                 <p><?php echo $user; ?></p>
                               </a>
                               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Account</a>
+                                  <a class="dropdown-item" href="#">My Profile</a>
                                   <a class="dropdown-item" href="logout">Log out</a>
                               </div>
-                            </li>
+                          </li>
                         </ul>
                     </div>
                 </div>
@@ -143,9 +143,37 @@ $user = $this->session->userdata('user');
             <!-- End Navbar -->
             <div class="panel-header panel-header-sm">
             </div>
-            <div>
-              <h4>Under Construction</h4>
+             <form class="form-basic" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Update Services</h1>
             </div>
+
+
+            <div class="form-row">
+                <label>
+                    <span>Domain name</span>
+                    <input type="url" placeholder="http:www.company1.com">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Subscription</span>
+                    <select name="dropdown">
+                        <option>Free</option>
+                        <option>Upgrade to pro</option>
+                        </select>
+                </label>
+            </div>
+
+
+            <div class="form-row">
+                <button type="submit">Submit Form</button>
+            </div>
+
+        </form>
+
             <footer class="footer">
                 <div class="container-fluid">
 									<nav>

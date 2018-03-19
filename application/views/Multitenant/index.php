@@ -62,7 +62,7 @@ $user = $this->session->userdata('user');
                         <p><?php echo $user; ?></p>
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">Account</a>
+                          <a class="dropdown-item" href="TenantDash_Dashboard">My Dashboard</a>
                           <a class="dropdown-item" href="logout">Log out</a>
                       </div>
                   </li>
@@ -255,17 +255,17 @@ $user = $this->session->userdata('user');
               <nav>
                   <ul>
                       <li>
-                          <a href="#">
+                          <a href="home">
                               Tooth Fairy
                           </a>
                       </li>
                       <li>
-                          <a href="#">
+                          <a href="aboutus">
                               About Us
                           </a>
                       </li>
                       <li>
-                          <a href="#">
+                          <a href="blog">
                               Blog
                           </a>
                       </li>
