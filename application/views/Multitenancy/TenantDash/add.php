@@ -27,7 +27,7 @@ $user = $this->session->userdata('user');
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
-          <div class="logo">
+            <div class="logo">
                 <a href="" class="simple-text logo-mini">
                     ANC
                 </a>
@@ -38,31 +38,41 @@ $user = $this->session->userdata('user');
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="active">
-                        <a href="AdminDash_Dashboard">
+                        <a href="TenantDash_Dashboard">
                             <i class="now-ui-icons design_app"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    
                     <li>
-                        <a href="AdminDash_Users">
+                        <a href="TenantDash_Profile">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>My Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="TenantDash_users">
                             <i class="now-ui-icons users_circle-08"></i>
                             <p>Users</p>
                         </a>
                     </li>
                     <li>
-                        <a href="AdminDash_Transactions">
+                        <a href="TenantDash_Transactions">
                             <i class="now-ui-icons business_globe"></i>
                             <p>Transactions</p>
                         </a>
                     </li>
                     <li>
-                        <a href="AdminDash_Messages">
+                        <a href="TenantDash_Messages">
                             <i class="now-ui-icons ui-2_chat-round"></i>
                             <p>Messages</p>
                         </a>
                     </li>
-                   
+                    <li>
+                        <a href="TenantDash_Website">
+                            <i class="now-ui-icons design-2_ruler-pencil"></i>
+                            <p>Website Management</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -137,33 +147,62 @@ $user = $this->session->userdata('user');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header">
+                              <div class="card-header">
                                 <h4 class="card-title">Users</h4>
+                                <a href="TenantDash_Add"><button class="btn btn-success">Add User</button></a>
+                                <a href="TenantDash_Update"><button class="btn btn-warning">Update User</button></a>
+                                <a href="TenantDash_Delete"><button class="btn btn-danger">Delete User</button></a>
                             </div>
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                      <thead class="text-primary">
-                                        <tr>
-                                          <th>User ID</th>
-                                          <th>Company Name</th>
-                                          <th>Records</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr class="gradeC">
-                                            <td>as124</td>
-                                            <td>Mobile</td>
-                                            <td>mobile</td>
-                                        </tr>
-                                        <tr class="gradeC">
-                                            <td>as125</td>
-                                            <td>mobilex</td>
-                                            <td>mobilex</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                </div>
+      
+
+        <!-- You only need this form and the form-basic.css -->
+
+        <form class="form-basic" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Add new user</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>First name</span>
+                    <input type="text" name="name">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Last name</span>
+                    <input type="text" name="name">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Position</span>
+                    <select name="dropdown">
+                        <option>Admin</option>
+                        <option>User</option>
+                        </select>
+                </label>
+            </div>
+
+
+            <div class="form-row">
+                <button type="submit" button class="btn btn-info">Add</button>
+                </div>
+
+            </form>
+
+
                             </div>
                         </div>
                     </div>
@@ -171,37 +210,37 @@ $user = $this->session->userdata('user');
             </div>
             <footer class="footer">
                 <div class="container-fluid">
-									<nav>
-											<ul>
-													<li>
-															<a href="home">
-																	Tooth Fairy
-															</a>
-													</li>
-													<li>
-															<a href="aboutus">
-																	About Us
-															</a>
-													</li>
-													<li>
-															<a href="blog">
-																	Blog
-															</a>
-													</li>
-											</ul>
-									</nav>
-									<div class="copyright">
-											&copy;
-											<script>
-													document.write(new Date().getFullYear())
-											</script>, Designed by
-											<a href="#" target="_blank">ANC</a>. Coded by
-											<a href="#" target="_blank">Wisdom Tooth</a>.
-									</div>
+                                    <nav>
+                                            <ul>
+                                                    <li>
+                                                            <a href="home">
+                                                                    Tooth Fairy
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href="aboutus">
+                                                                    About Us
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href="blog">
+                                                                    Blog
+                                                            </a>
+                                                    </li>
+                                            </ul>
+                                    </nav>
+                                    <div class="copyright">
+                                            &copy;
+                                            <script>
+                                                    document.write(new Date().getFullYear())
+                                            </script>, Designed by
+                                            <a href="#" target="_blank">ANC</a>. Coded by
+                                            <a href="#" target="_blank">Wisdom Tooth</a>.
+                                    </div>
                 </div>
             </footer>
         </div>
-    </div>
+    
 </body>
 <!--   Core JS Files   -->
 <script src="assets/js/core/jquery.min.js"></script>

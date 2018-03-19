@@ -14,6 +14,6 @@ class TenantDash_Add extends CI_Controller {
 	public function index()
 	{
 
-    $this->load->view('Multitenancy/TenantDash/addnew');
+    $this->load->view('Multitenancy/TenantDash/add');
   }
 }
