@@ -143,9 +143,37 @@ $user = $this->session->userdata('user');
             <!-- End Navbar -->
             <div class="panel-header panel-header-sm">
             </div>
-            <div>
-              <h4>Under Construction</h4>
+             <form class="form-basic" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Update Services</h1>
             </div>
+
+
+            <div class="form-row">
+                <label>
+                    <span>Domain name</span>
+                    <input type="url" placeholder="http:www.company1.com">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Subscription</span>
+                    <select name="dropdown">
+                        <option>Free</option>
+                        <option>Upgrade to pro</option>
+                        </select>
+                </label>
+            </div>
+
+
+            <div class="form-row">
+                <button type="submit">Submit Form</button>
+            </div>
+
+        </form>
+
             <footer class="footer">
                 <div class="container-fluid">
 									<nav>

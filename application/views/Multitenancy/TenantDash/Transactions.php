@@ -156,21 +156,17 @@ $user = $this->session->userdata('user');
                                       <thead class="text-primary">
                                         <tr>
                                           <th>User ID</th>
-                                          <th>Company Name</th>
-                                          <th>Database</th>
+                                          <th>Full Name</th>
+                                          <th>Patient Records</th>
                                         </tr>
                                       </thead>
                                       <tbody>
                                         <tr class="gradeC">
                                             <td>as124</td>
-                                            <td>Mobile</td>
-                                            <td>mobile</td>
+                                            <td>asd.pdf</td>
+                                            <td>mobile.pdf</td>
                                         </tr>
-                                        <tr class="gradeC">
-                                            <td>as125</td>
-                                            <td>mobilex</td>
-                                            <td>mobilex</td>
-                                        </tr>
+                                       
                                       </tbody>
                                     </table>
                                 </div>

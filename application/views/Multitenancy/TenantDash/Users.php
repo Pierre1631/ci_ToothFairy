@@ -149,9 +149,9 @@ $user = $this->session->userdata('user');
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Users</h4>
-                                <button class="btn btn-success">Add User</button>
-                                <button class="btn btn-warning">Update User</button>
-                                <button class="btn btn-danger">Delete User</button>
+                                <a href="TenantDash_Add"><button class="btn btn-success">Add User</button></a>
+                                <a href="TenantDash_Update"><button class="btn btn-warning">Update User</button></a>
+                                <a href="TenantDash_Delete"><button class="btn btn-danger">Delete User</button></a>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">

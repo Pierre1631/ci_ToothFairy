@@ -27,7 +27,7 @@ $user = $this->session->userdata('user');
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
-          <div class="logo">
+            <div class="logo">
                 <a href="" class="simple-text logo-mini">
                     ANC
                 </a>
@@ -78,7 +78,7 @@ $user = $this->session->userdata('user');
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">Table List</a>
+                        <a class="navbar-brand" href="#pablo">User Profile</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -125,7 +125,7 @@ $user = $this->session->userdata('user');
                                   <a class="dropdown-item" href="#">Account</a>
                                   <a class="dropdown-item" href="logout">Log out</a>
                               </div>
-                            </li>
+                          </li>
                         </ul>
                     </div>
                 </div>
@@ -133,43 +133,11 @@ $user = $this->session->userdata('user');
             <!-- End Navbar -->
             <div class="panel-header panel-header-sm">
             </div>
-            <div class="content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Users</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                      <thead class="text-primary">
-                                        <tr>
-                                          <th>User ID</th>
-                                          <th>Company Name</th>
-                                          <th>Records</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr class="gradeC">
-                                            <td>as124</td>
-                                            <td>Mobile</td>
-                                            <td>mobile</td>
-                                        </tr>
-                                        <tr class="gradeC">
-                                            <td>as125</td>
-                                            <td>mobilex</td>
-                                            <td>mobilex</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </diV>
+            <div>
+              <h4>Under Construction</h4>
             </div>
-            <footer class="footer">
+
+        <footer class="footer">
                 <div class="container-fluid">
 									<nav>
 											<ul>
@@ -226,3 +194,62 @@ $user = $this->session->userdata('user');
 </script>
 
 </html>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+        <section id="main-content">
+    <section class="wrapper">
+        <div class="mail-w3agile">
+        <!-- page start-->
+        <div class="row">
+            <div class="col-sm-3 com-w3ls">
+                <section class="panel">
+                    <div class="panel-body">
+                        <a href="TenantDash_Mail"  class="btn btn-compose">
+                            Compose Mail
+                        </a>
+
+                </section>
+
+                </div>
+            <div class="col-sm-9 mail-w3agile">
+                <section class="panel">
+                    <header class="panel-heading wht-bg">
+                       <h4 class="gen-case">Inbox
+                        <form action="#" class="pull-right mail-src-position">
+                            <div class="input-append">
+                                <input type="text" class="form-control " placeholder="Search Mail">
+                            </div>
+                        </form>
+                       </h4>
+                    </header>
+
+                            <div class="btn-group">
+                                <a data-original-title="Refresh" >
+                                    <i class=" fa fa-refresh"></i> Refresh
+                                </a>
+                            </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+                                </div> <!-- brand Icons -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
