@@ -9,11 +9,11 @@ class TenantDash_Profile extends CI_Controller {
 
 		if( empty($user) )
 			redirect('login','refresh');
+		$this->load->model('user_model');
 	}
 
 	public function index()
 	{
-
     $this->load->view('Multitenancy/TenantDash/Myprofile');
   }
 }
