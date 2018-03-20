@@ -151,56 +151,28 @@ $user = $this->session->userdata('user');
         <h2>Our Services</h2>
         <hr>
       </div>
-      <div class="space"></div>
       <div class="row">
         <div class="col-md-3 col-sm-6">
-          <div class="service"> <i class="fa fa-desktop"></i>
+          <div class="service"> <i class="fa fa-folder-open-o"></i>
             <h3>Web Design</h3>
             <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="service"> <i class="fa fa-cogs"></i>
+          <div class="service"> <i class="fa fa-gear"></i>
             <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="service"> <i class="fa fa-tablet"></i>
+          <div class="service"> <i class="fa fa-calendar"></i>
             <h3>App Design</h3>
             <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="service"><i class="fa fa-html5"></i>
+          <div class="service"><i class="fa fa-credit-card"></i>
             <h3>PSD to HTML5</h3>
-            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
-          </div>
-        </div>
-      </div>
-      <div class="space"></div>
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="service"><i class="fa fa-wordpress"></i>
-            <h3>WordPress</h3>
-            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="service"><i class="fa fa-bullhorn"></i>
-            <h3>Marketing</h3>
-            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="service"><i class="fa fa-rocket"></i>
-            <h3>Branding</h3>
-            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="service"><i class="fa fa-leaf"></i>
-            <h3>Print Design</h3>
             <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
           </div>
         </div>
