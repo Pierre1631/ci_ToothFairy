@@ -135,10 +135,19 @@
     </div>
     <div class="page-header" filter-color="orange">
       <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
+      <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img src="<?php echo base_url('assets/img/template1.png'); ?>" class="img-responsive">
+              </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="col-md-4 content-center">
           <div class="card card-login card-plain">
-            <form class="form" method="post" action="signup/register_user">
+            <form class="form" method="post" action="signup/register_user" onsubmit="return checkCheckBoxes(this);">
               <div class="header header-primary text-center">
                 <div class="logo-container">
                   <img src="#" alt="">
@@ -180,6 +189,14 @@
                     <i class="now-ui-icons text_caps-small"></i>
                   </span>
                   <input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" />
+                </div>
+                <div >
+                  <input type="radio" name="template" />Template 1
+                  <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Click to view</button>
+                </div>
+                <div >
+                  <input type="radio" name="template" />Template 2
+                  <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Click to view</button>
                 </div>
                 <div class="footer text-center">
                   <input class="btn btn-primary btn-round btn-lg btn-block" type="submit" value="Register"/>
@@ -242,6 +259,7 @@
 <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="./assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/signup.js'); ?>"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         // the body of this function is in assets/js/now-ui-kit.js

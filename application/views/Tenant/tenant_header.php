@@ -16,7 +16,7 @@
 			<div class="container">
 				<ul class="siglog">
 					<li><a href="<?php echo site_url('user/login_view'); ?>"  class="pull-right" data-target="#LoginModal" data-toggle="modal"><span id="sig" class="glyphicon glyphicon-log-in"></span> <b>LOGIN</b></a></li>
-					<li><a href="<?php echo site_url('register'); ?>" class="pull-right" ><span class="glyphicon glyphicon-user"></span> <b>SIGN UP</b></a></li>
+					<li><a href="<?php echo site_url('user/register_view'); ?>" class="pull-right" ><span class="glyphicon glyphicon-user"></span> <b>SIGN UP</b></a></li>
 				</ul>
 			</div>
 		</div>
