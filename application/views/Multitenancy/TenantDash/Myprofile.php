@@ -22,16 +22,27 @@
 $user = $this->session->userdata('user');
 ?>
 <body class="">
+  <?php
+    $success_msg= $this->session->flashdata('success_msg');
+    $error_msg= $this->session->flashdata('error_msg');
+
+    if($success_msg){
+      echo "<script type='text/javascript'>alert('$success_msg');</script>";
+    }
+    if($error_msg){
+      echo "<script type='text/javascript'>alert('$error_msg');</script>";
+    }
+   ?>
     <div class="wrapper ">
         <div class="sidebar" data-color="orange">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                <a href="Home" class="simple-text logo-mini">
                     ANC
                 </a>
-                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                <a href="Home" class="simple-text logo-normal">
                     Tooth Fairy
                 </a>
             </div>
@@ -88,7 +99,7 @@ $user = $this->session->userdata('user');
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">User Profile</a>
+                        <a class="navbar-brand" href="TenantDash_Profile">User Profile</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -132,7 +143,7 @@ $user = $this->session->userdata('user');
                                 <p><?php echo $user; ?></p>
                               </a>
                               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Account</a>
+                                  <a class="dropdown-item" href="#">My Profile</a>
                                   <a class="dropdown-item" href="logout">Log out</a>
                               </div>
                           </li>
@@ -151,24 +162,12 @@ $user = $this->session->userdata('user');
                                 <h5 class="title">Edit Profile</h5>
                             </div>
                             <div class="card-body">
-                                <form>
+                                <form class="form" method="get" action="">
                                     <div class="row">
-                                        <div class="col-md-5 pr-1">
+                                        <div class="col-md-4 pr-1">
                                             <div class="form-group">
-                                                <label>Company (disabled)</label>
-                                                <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 px-1">
-                                            <div class="form-group">
-                                                <label>Username</label>
-                                                <input type="text" class="form-control" placeholder="Username" value="michael23">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 pl-1">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" placeholder="Email">
+                                                <label>User ID</label>
+                                                <input type="text" class="form-control" name="UserID" disabled="" placeholder="User ID" value="">
                                             </div>
                                         </div>
                                     </div>
@@ -176,13 +175,21 @@ $user = $this->session->userdata('user');
                                         <div class="col-md-6 pr-1">
                                             <div class="form-group">
                                                 <label>First Name</label>
-                                                <input type="text" class="form-control" placeholder="Company" value="Mike">
+                                                <input type="text" class="form-control" name="UserFirstName" placeholder="First Name" value="">
                                             </div>
                                         </div>
                                         <div class="col-md-6 pl-1">
                                             <div class="form-group">
+                                                <label>Middle Name</label>
+                                                <input type="text" class="form-control" name="UserMiddleName" placeholder="Middle Name" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 pr-1">
+                                            <div class="form-group">
                                                 <label>Last Name</label>
-                                                <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                                                <input type="text" class="form-control" name="UserLastName" placeholder="Last Name" value="">
                                             </div>
                                         </div>
                                     </div>
@@ -190,7 +197,7 @@ $user = $this->session->userdata('user');
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Address</label>
-                                                <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                <input type="text" class="form-control" name="UserAddress" placeholder="Home Address" value="">
                                             </div>
                                         </div>
                                     </div>
@@ -198,27 +205,26 @@ $user = $this->session->userdata('user');
                                         <div class="col-md-4 pr-1">
                                             <div class="form-group">
                                                 <label>City</label>
-                                                <input type="text" class="form-control" placeholder="City" value="Mike">
+                                                <input type="text" class="form-control" name="UserCity" placeholder="City" value="">
                                             </div>
                                         </div>
                                         <div class="col-md-4 px-1">
                                             <div class="form-group">
                                                 <label>Country</label>
-                                                <input type="text" class="form-control" placeholder="Country" value="Andrew">
+                                                <input type="text" class="form-control" name="UserCountry" placeholder="Country" value="">
                                             </div>
                                         </div>
                                         <div class="col-md-4 pl-1">
                                             <div class="form-group">
                                                 <label>Postal Code</label>
-                                                <input type="number" class="form-control" placeholder="ZIP Code">
+                                                <input type="number" class="form-control" name="UserPostalCode" placeholder="ZIP Code">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>About Me</label>
-                                                <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                        <div class="col-md-4 pr-1">
+                                            <div class="form-row">
+                                                <button type="submit" class="btn btn-primary btn-round">Save</button>
                                             </div>
                                         </div>
                                     </div>

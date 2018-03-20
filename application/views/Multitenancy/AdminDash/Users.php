@@ -39,41 +39,31 @@ $user = $this->session->userdata('user');
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="TenantDash_Dashboard">
+                        <a href="AdminDash_Dashboard">
                             <i class="now-ui-icons design_app"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="TenantDash_Profile">
-                            <i class="now-ui-icons education_atom"></i>
-                            <p>My Profile</p>
-                        </a>
-                    </li>
+
                     <li class="active">
-                        <a href="TenantDash_users">
+                        <a href="AdminDash_Users">
                             <i class="now-ui-icons users_circle-08"></i>
-                            <p>Users</p>
+                            <p>Manage Tenants</p>
                         </a>
                     </li>
                     <li>
-                        <a href="TenantDash_Transactions">
+                        <a href="AdminDash_Transactions">
                             <i class="now-ui-icons business_globe"></i>
                             <p>Transactions</p>
                         </a>
                     </li>
                     <li>
-                        <a href="TenantDash_Messages">
+                        <a href="AdminDash_Messages">
                             <i class="now-ui-icons ui-2_chat-round"></i>
                             <p>Messages</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="TenantDash_Website">
-                            <i class="now-ui-icons design-2_ruler-pencil"></i>
-                            <p>Website Management</p>
-                        </a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -89,7 +79,7 @@ $user = $this->session->userdata('user');
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="TenantDash_Users">Users</a>
+                        <a class="navbar-brand" href="AdminDash_Users">Users</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -150,7 +140,8 @@ $user = $this->session->userdata('user');
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Users</h4>
-                                <a href="TenantDash_Delete"><button class="btn btn-danger btn-round">Delete User</button></a>
+                                <a href="AdminDash_Add"><button class="btn btn-success btn-round">Add User</button></a>
+                                <a href="AdminDash_Delete"><button class="btn btn-danger btn-round">Delete User</button></a>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">

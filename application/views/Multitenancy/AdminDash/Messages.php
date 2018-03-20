@@ -28,26 +28,26 @@ $user = $this->session->userdata('user');
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
             <div class="logo">
-                <a href="" class="simple-text logo-mini">
+                <a href="home" class="simple-text logo-mini">
                     ANC
                 </a>
-                <a href="" class="simple-text logo-normal">
+                <a href="home" class="simple-text logo-normal">
                     Tooth Fairy
                 </a>
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="active">
+                    <li>
                         <a href="AdminDash_Dashboard">
                             <i class="now-ui-icons design_app"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    
+
                     <li>
                         <a href="AdminDash_Users">
                             <i class="now-ui-icons users_circle-08"></i>
-                            <p>Users</p>
+                            <p>Manage Tenants</p>
                         </a>
                     </li>
                     <li>
@@ -56,13 +56,12 @@ $user = $this->session->userdata('user');
                             <p>Transactions</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="AdminDash_Messages">
                             <i class="now-ui-icons ui-2_chat-round"></i>
                             <p>Messages</p>
                         </a>
                     </li>
-                   
                 </ul>
             </div>
         </div>
@@ -78,7 +77,7 @@ $user = $this->session->userdata('user');
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">User Profile</a>
+                        <a class="navbar-brand" href="AdminDash_Messages">Messages</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>

@@ -28,16 +28,16 @@ $user = $this->session->userdata('user');
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
            <div class="logo">
-                <a href="" class="simple-text logo-mini">
+                <a href="home" class="simple-text logo-mini">
                     ANC
                 </a>
-                <a href="" class="simple-text logo-normal">
+                <a href="home" class="simple-text logo-normal">
                     Tooth Fairy
                 </a>
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="active">
+                    <li>
                         <a href="TenantDash_Dashboard">
                             <i class="now-ui-icons design_app"></i>
                             <p>Dashboard</p>
@@ -49,7 +49,7 @@ $user = $this->session->userdata('user');
                             <p>My Profile</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="TenantDash_users">
                             <i class="now-ui-icons users_circle-08"></i>
                             <p>Users</p>
@@ -88,7 +88,7 @@ $user = $this->session->userdata('user');
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">Table List</a>
+                        <a class="navbar-brand" href="#pablo">Delete Users</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -132,10 +132,10 @@ $user = $this->session->userdata('user');
                                 <p><?php echo $user; ?></p>
                               </a>
                               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Account</a>
+                                  <a class="dropdown-item" href="#">My Profile</a>
                                   <a class="dropdown-item" href="logout">Log out</a>
                               </div>
-                            </li>
+                          </li>
                         </ul>
                     </div>
                 </div>
@@ -146,122 +146,114 @@ $user = $this->session->userdata('user');
             <div class="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="card">
-                              <div class="card-header">
-                                <h4 class="card-title">Users</h4>
-                                <a href="TenantDash_Add"><button class="btn btn-success">Add User</button></a>
-                                <a href="TenantDash_Update"><button class="btn btn-warning">Update User</button></a>
-                                <a href="TenantDash_Delete"><button class="btn btn-danger">Delete User</button></a>
-                            </div>
-                            <div class="card-body">
-      
-
-        <!-- You only need this form and the form-basic.css -->
-
-        <form class="form-basic" method="post" action="#">
-
-            <div class="form-title-row">
-                <h1>Delete user</h1>
-            </div>
-
-            <div class="form-row">
-                <label>
-                    <span>First name</span>
-                    <input type="text" name="name">
-                </label>
-            </div>
-
-            <div class="form-row">
-                <label>
-                    <span>Last name</span>
-                    <input type="text" name="name">
-                </label>
-            </div>
-
-            <div class="form-row">
-                <label>
-                    <span>Email</span>
-                    <input type="email" name="email">
-                </label>
-            </div>
-
-            <div class="form-row">
-                <label>
-                    <span>Position</span>
-                    <select name="dropdown">
-                        <option>Admin</option>
-                        <option>User</option>
-                        </select>
-                </label>
-            </div>
-
-
-            <div class="form-row">
-                <button type="submit" button class="btn btn-info">Delete</button>
-                </div>
-
-            </form>
-
-
-                            </div>
-                        </div>
+                      <div class="card">
+                            <div class="card-header">
+                              <h4 class="card-title">Delete</h4>
+                              <a href="TenantDash_Delete"><button class="btn btn-danger btn-round">Delete User</button></a>
+                              <a href="TenantDash_Users"><button class="btn btn-primary btn-round" type="button">
+                                  <i class="now-ui-icons arrows-1_minimal-left"></i> Back
+                              </button></a>
+                          </div>
+                          <div class="card-body">
+                              <form>
+                                <div class="row">
+                                    <div class="col-md-6 pr-1">
+                                        <div class="form-group">
+                                            <label>First Name</label>
+                                            <input type="text" class="form-control" placeholder="First Name" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pr-1">
+                                        <div class="form-group">
+                                            <label>First Name</label>
+                                            <input type="text" class="form-control" placeholder="Last Name" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 pr-1">
+                                      <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" placeholder="Email">
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 pr-1">
+                                      <div class="form-group">
+                                          <label>Position</label>
+                                          <select name="dropdown-menu">
+                                          <option>Admin</option>
+                                          <option>User</option>
+                                          </select>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="submit" button class="btn btn-danger btn-round">Delete</button>
+                                </div>
+                              </form>
+                          </div>
+                      </div>
                     </div>
                 </diV>
             </div>
             <footer class="footer">
                 <div class="container-fluid">
-                                    <nav>
-                                            <ul>
-                                                    <li>
-                                                            <a href="home">
-                                                                    Tooth Fairy
-                                                            </a>
-                                                    </li>
-                                                    <li>
-                                                            <a href="aboutus">
-                                                                    About Us
-                                                            </a>
-                                                    </li>
-                                                    <li>
-                                                            <a href="blog">
-                                                                    Blog
-                                                            </a>
-                                                    </li>
-                                            </ul>
-                                    </nav>
-                                    <div class="copyright">
-                                            &copy;
-                                            <script>
-                                                    document.write(new Date().getFullYear())
-                                            </script>, Designed by
-                                            <a href="#" target="_blank">ANC</a>. Coded by
-                                            <a href="#" target="_blank">Wisdom Tooth</a>.
-                                    </div>
+                  <nav>
+                      <ul>
+                          <li>
+                              <a href="home">
+                                  Tooth Fairy
+                              </a>
+                          </li>
+                          <li>
+                              <a href="aboutus">
+                                  About Us
+                              </a>
+                          </li>
+                          <li>
+                              <a href="blog">
+                                  Blog
+                              </a>
+                          </li>
+                      </ul>
+                  </nav>
+                  <div class="copyright">
+                      &copy;
+                      <script>
+                          document.write(new Date().getFullYear())
+                      </script>, Designed by
+                      <a href="#" target="_blank">ANC</a>. Coded by
+                      <a href="#" target="_blank">Wisdom Tooth</a>.
+                  </div>
                 </div>
             </footer>
         </div>
-    
-</body>
-<!--   Core JS Files   -->
-<script src="assets/js/core/jquery.min.js"></script>
-<script src="assets/js/core/popper.min.js"></script>
-<script src="assets/js/core/bootstrap.min.js"></script>
-<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-<!-- Chart JS -->
-<script src="assets/js/plugins/chartjs.min.js"></script>
-<!--  Notifications Plugin    -->
-<script src="assets/js/plugins/bootstrap-notify.js"></script>
-<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="assets/js/now-ui-dashboard.js?v=1.0.1"></script>
-<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
-<script src="assets/demo/demo.js"></script>
-<script>
+    </div>
+  </body>
+  <!--   Core JS Files   -->
+  <script src="assets/js/core/jquery.min.js"></script>
+  <script src="assets/js/core/popper.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+  <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+  <script src="assets/demo/demo.js"></script>
+  <script>
     $(document).ready(function() {
         // Javascript method's body can be found in assets/js/demos.js
         demo.initDashboardPageCharts();
     });
-</script>
+  </script>
 
-</html>
+  </html>

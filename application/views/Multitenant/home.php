@@ -253,17 +253,17 @@
               <nav>
                   <ul>
                       <li>
-                          <a href="#">
+                          <a href="home">
                               Tooth Fairy
                           </a>
                       </li>
                       <li>
-                          <a href="#">
+                          <a href="Aboutus">
                               About Us
                           </a>
                       </li>
                       <li>
-                          <a href="#">
+                          <a href="blog">
                               Blog
                           </a>
                       </li>

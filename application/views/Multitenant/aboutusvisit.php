@@ -137,13 +137,13 @@
                         </div>
                         <div class="col-md-5">
                             <!-- First image on the right side, above the article -->
-                            <div class="image-container image-right" style="background-image: url('assets/img/bg1.jpg')"></div> 
+                            <div class="image-container image-right" style="background-image: url('assets/img/bg1.jpg')"></div>
                             <h3>So why you need to choose Tooth Fairy?</h3>
                             <p>Multitenant Websites usually provides Blogspots, Event Web-blogs, Food Catalogs and the likes. Here in Tooth Fairy, dental clinics that wants to have a seamless transactions and efficient services, YOU CAN HAVE IT NOW.
                             </p>
                             <p>
                                 Dental Clinic Website is catered by Tooth Fairy. Where Dental clinics can have its own Clinic Website for their clients to have a fastest and reliable transaction anytime, anywhere.
-                            </p>            
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -193,29 +193,89 @@
                 </div>
             </div>
         </div>
-        <div class="section section-contact-us text-center">
+        <div class="section section-team text-center">
             <div class="container">
-                <h2 class="title">Want to work with us?</h2>
-                <p class="description">Your project is very important to us.</p>
-                <div class="row">
-                    <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
-                        <div class="input-group input-lg">
-                            <span class="input-group-addon">
-                                <i class="now-ui-icons users_circle-08"></i>
-                            </span>
-                            <input type="text" class="form-control" placeholder="First Name...">
+                <h2 class="title">Here is our team</h2><br>
+                <div class="team">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-player">
+                                <img src="assets/img/team/01.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <h4 class="title">Charlone Poserio</h4>
+                                <p class="category text-primary">Back-end and Front-End Developer</p>
+                                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                    <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-instagram"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-facebook-square"></i></a>
+                            </div>
                         </div>
-                        <div class="input-group input-lg">
-                            <span class="input-group-addon">
-                                <i class="now-ui-icons ui-1_email-85"></i>
-                            </span>
-                            <input type="text" class="form-control" placeholder="Email...">
+                        <div class="col-md-4">
+                            <div class="team-player">
+                                <img src="assets/img/team/02.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <h4 class="title">Luwelle Baltazar</h4>
+                                <p class="category text-primary">Back-end Developer</p>
+                                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                    <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-linkedin"></i></a>
+                            </div>
                         </div>
-                        <div class="textarea-container">
-                            <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
+                        <div class="col-md-4">
+                            <div class="team-player">
+                                <img src="assets/img/team/05.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <h4 class="title">Darren Andrian Azur</h4>
+                                <p class="category text-primary">Back-end and Front-End Developer</p>
+                                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                    <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-linkedin"></i></a>
+                            </div>
                         </div>
-                        <div class="send-button">
-                            <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
+                        <div class="col-md-4">
+                            <div class="team-player">
+                                <img src="assets/img/team/04.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <h4 class="title">Aldwin Sanchez</h4>
+                                <p class="category text-primary">Back-end Developer</p>
+                                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                    <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-player">
+                                <img src="assets/img/team/06.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <h4 class="title">Mary Colleen Nagera</h4>
+                                <p class="category text-primary">Front-End Developer</p>
+                                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                    <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-player">
+                                <img src="assets/img/team/03.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <h4 class="title">Kenneth Domingo</h4>
+                                <p class="category text-primary">Front-End Developer</p>
+                                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                    <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-player">
+                                <img src="assets/img/eva.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                <h4 class="title">Raymart Guittierez</h4>
+                                <p class="category text-primary">Back-end Developer</p>
+                                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                    <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-google-plus"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fa fa-twitter"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

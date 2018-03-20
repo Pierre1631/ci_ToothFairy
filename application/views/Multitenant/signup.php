@@ -141,7 +141,7 @@
             <form class="form" method="post" action="signup/register_user">
               <div class="header header-primary text-center">
                 <div class="logo-container">
-                  <img src="#" alt="">
+                  <img src="assets/img/now-logo.png"  alt="">
                 </div>
               </div>
               <div class="content">
@@ -179,7 +179,7 @@
                   <span class="input-group-addon">
                     <i class="now-ui-icons text_caps-small"></i>
                   </span>
-                  <input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" />
+                  <input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" required />
                 </div>
                 <div class="footer text-center">
                   <input class="btn btn-primary btn-round btn-lg btn-block" type="submit" value="Register"/>
@@ -224,7 +224,7 @@
                     <a href="#" target="_blank">ANC</a>. Coded by
                     <a href="#" target="_blank">Wisdom Tooth</a>.
                 </div>
-              </div>  
+              </div>
           </div>
         </div>
       </div>
@@ -247,9 +247,7 @@
         // the body of this function is in assets/js/now-ui-kit.js
         nowuiKit.initSliders();
     });
-
     function scrollToDownload() {
-
         if ($('.section-download').length != 0) {
             $("html, body").animate({
                 scrollTop: $('.section-download').offset().top
