@@ -16,39 +16,39 @@
     <link href="assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="assets/demo/demo.css" rel="stylesheet" />
-    <script src="assets/form-basic.css"></script>
 </head>
 <?php
 //retrieve session
 $user = $this->session->userdata('user');
 ?>
 <body class="">
+
     <div class="wrapper ">
         <div class="sidebar" data-color="orange">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
             <div class="logo">
-                <a href="" class="simple-text logo-mini">
+                <a href="home" class="simple-text logo-mini">
                     ANC
                 </a>
-                <a href="" class="simple-text logo-normal">
+                <a href="home" class="simple-text logo-normal">
                     Tooth Fairy
                 </a>
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="active">
+                    <li>
                         <a href="AdminDash_Dashboard">
                             <i class="now-ui-icons design_app"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    
-                    <li>
+
+                    <li class="active">
                         <a href="AdminDash_Users">
                             <i class="now-ui-icons users_circle-08"></i>
-                            <p>Users</p>
+                            <p>Manage Tenants</p>
                         </a>
                     </li>
                     <li>
@@ -63,7 +63,7 @@ $user = $this->session->userdata('user');
                             <p>Messages</p>
                         </a>
                     </li>
-                   
+
                 </ul>
             </div>
         </div>
@@ -79,7 +79,7 @@ $user = $this->session->userdata('user');
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">Table List</a>
+                        <a class="navbar-brand" href="AdminDash_Users">Users</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -123,10 +123,10 @@ $user = $this->session->userdata('user');
                                 <p><?php echo $user; ?></p>
                               </a>
                               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Account</a>
+                                  <a class="dropdown-item" href="#">My Profile</a>
                                   <a class="dropdown-item" href="logout">Log out</a>
                               </div>
-                            </li>
+                          </li>
                         </ul>
                     </div>
                 </div>
@@ -138,11 +138,10 @@ $user = $this->session->userdata('user');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                             <div class="card-header">
+                            <div class="card-header">
                                 <h4 class="card-title">Users</h4>
-                                <a href="AdminDash_Add"><button class="btn btn-success">Add User</button></a>
-                                <a href="AdminDash_Update"><button class="btn btn-warning">Update User</button></a>
-                                <a href="AdminDash_Delete"><button class="btn btn-danger">Delete User</button></a>
+                                <a href="AdminDash_Add"><button class="btn btn-success btn-round">Add User</button></a>
+                                <a href="AdminDash_Delete"><button class="btn btn-danger btn-round">Delete User</button></a>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -150,22 +149,67 @@ $user = $this->session->userdata('user');
                                       <thead class="text-primary">
                                         <tr>
                                           <th>User ID</th>
-                                          <th>Full Name</th>
-                                          <th>E-mail</th>
-                                          <th>Position</th>
+                                          <th>First Name</th>
+                                          <th>Last Name</th>
+                                          <th>Dental Records</th>
                                           <th>Transactions</th>
                                         </tr>
                                       </thead>
                                       <tbody>
                                         <tr class="gradeA">
                                           <td>Ken123</td>
-                                          <td>Ken Domingo</td>
-                                          <td>Domingo@gmail.com</td>
-                                          <td>Admin</td>
-                                          <td>Paid</td>
-                                       </tr>
+                                          <td>Ken</td>
+                                          <td>Domingo</td>
+                                          <td>Domingo.pdf</td>
+                                          <td>Ken123</td>
+                                        </tr>
                                       </tbody>
-                                      </table>
+                                      <tbody>
+                                        <tr class="gradeA">
+                                          <td>Ken123</td>
+                                          <td>Ken</td>
+                                          <td>Domingo</td>
+                                          <td>Domingo.pdf</td>
+                                          <td>Ken123</td>
+                                        </tr>
+                                      </tbody>
+                                      <tbody>
+                                        <tr class="gradeA">
+                                          <td>Ken123</td>
+                                          <td>Ken</td>
+                                          <td>Domingo</td>
+                                          <td>Domingo.pdf</td>
+                                          <td>Ken123</td>
+                                        </tr>
+                                      </tbody>
+                                      <tbody>
+                                        <tr class="gradeA">
+                                          <td>Ken123</td>
+                                          <td>Ken</td>
+                                          <td>Domingo</td>
+                                          <td>Domingo.pdf</td>
+                                          <td>Ken123</td>
+                                        </tr>
+                                      </tbody>
+                                      <tbody>
+                                        <tr class="gradeA">
+                                          <td>Ken123</td>
+                                          <td>Ken</td>
+                                          <td>Domingo</td>
+                                          <td>Domingo.pdf</td>
+                                          <td>Ken123</td>
+                                        </tr>
+                                      </tbody>
+                                      <tbody>
+                                        <tr class="gradeA">
+                                          <td>Ken123</td>
+                                          <td>Ken</td>
+                                          <td>Domingo</td>
+                                          <td>Domingo.pdf</td>
+                                          <td>Ken123</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -221,13 +265,11 @@ $user = $this->session->userdata('user');
 <script src="assets/js/now-ui-dashboard.js?v=1.0.1"></script>
 <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
 <script src="assets/demo/demo.js"></script>
-  <script src="assets/bootstrap.min.css" type="text/javascript"></script>
 <script>
     $(document).ready(function() {
         // Javascript method's body can be found in assets/js/demos.js
         demo.initDashboardPageCharts();
     });
 </script>
- 
 
 </html>
