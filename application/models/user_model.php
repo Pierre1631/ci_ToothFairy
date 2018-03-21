@@ -6,7 +6,7 @@ class user_model extends CI_model{
   	public function login_user($email,$pass){
 	    $this->db->select('*');
 	    $this->db->from('user');
-	    $this->db->where('UserEmail',$email);
+	    $this->db->where('TenantEmail',$email);
 	    $this->db->where('UserPass',$pass);
 	    if($query=$this->db->get()){
 	      	return $query->row_array();

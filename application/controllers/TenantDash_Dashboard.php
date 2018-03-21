@@ -5,7 +5,8 @@ class TenantDash_Dashboard extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		$user =  $this->session->userdata('user');
+		//$user =  $this->session->userdata('user');
+		$user =  $_SESSION['user'];
 
 		if( empty($user) )
 			redirect('login','refresh');
@@ -14,7 +15,6 @@ class TenantDash_Dashboard extends CI_Controller {
 
 	public function index()
 	{
-
-    $this->load->view('Multitenancy/TenantDash/Dashboard');
-  }
+		$this->load->view('Multitenancy/TenantDash/Dashboard');
+	}
 }
