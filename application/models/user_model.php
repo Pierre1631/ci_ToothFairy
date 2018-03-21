@@ -26,6 +26,6 @@ class user_model extends CI_model{
 	    else{
 	      	return true;
 	    }
-  	}
+  	} 
 }
 ?>

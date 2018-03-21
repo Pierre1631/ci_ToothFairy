@@ -22,16 +22,27 @@
 $user = $this->session->userdata('user');
 ?>
 <body class="">
+  <?php
+    $success_msg= $this->session->flashdata('success_msg');
+    $error_msg= $this->session->flashdata('error_msg');
+
+    if($success_msg){
+      echo "<script type='text/javascript'>alert('$success_msg');</script>";
+    }
+    if($error_msg){
+      echo "<script type='text/javascript'>alert('$error_msg');</script>";
+    }
+   ?>
     <div class="wrapper ">
         <div class="sidebar" data-color="orange">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                <a href="Home" class="simple-text logo-mini">
                     ANC
                 </a>
-                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                <a href="Home" class="simple-text logo-normal">
                     Tooth Fairy
                 </a>
             </div>
@@ -88,7 +99,7 @@ $user = $this->session->userdata('user');
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">User Profile</a>
+                        <a class="navbar-brand" href="TenantDash_Profile">User Profile</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -132,7 +143,7 @@ $user = $this->session->userdata('user');
                                 <p><?php echo $user; ?></p>
                               </a>
                               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Account</a>
+                                  <a class="dropdown-item" href="#">My Profile</a>
                                   <a class="dropdown-item" href="logout">Log out</a>
                               </div>
                           </li>
@@ -151,10 +162,11 @@ $user = $this->session->userdata('user');
                                 <h5 class="title">Edit Profile</h5>
                             </div>
                             <div class="card-body">
-                                <form>
+                                <form class="form" method="get" action="">
                                     <div class="row">
-                                        <div class="col-md-5 pr-1">
+                                        <div class="col-md-4 pr-1">
                                             <div class="form-group">
+
                                                 <label>Company</label>
                                                 <input type="text" class="form-control" disabled="" placeholder="Company" value="<?php echo $user1['TenantCompany']?>">
                                             </div>
@@ -169,6 +181,7 @@ $user = $this->session->userdata('user');
                                     <div class="row">
 										<div class="col-md-6">
                                             <div class="form-group">
+
                                                 <label for="exampleInputEmail1">Email address</label>
                                                 <input type="email" class="form-control" disabled="" placeholder="Email" value="<?php echo $user1['TenantEmail']?>">
                                             </div>
@@ -177,6 +190,7 @@ $user = $this->session->userdata('user');
                                             <div class="form-group">
                                                 <label>Contact</label>
                                                 <input type="text" disabled="" class="form-control" placeholder="Contact" value="<?php echo $user1['TenantContact']?>">
+
                                             </div>
                                         </div>
                                     </div>
@@ -184,6 +198,7 @@ $user = $this->session->userdata('user');
 										<div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Address</label>
+
                                                 <input type="text" disabled="" class="form-control" placeholder="Address" value="<?php echo $user1['TenantAddress']?>">
                                             </div>
                                         </div>
@@ -192,26 +207,34 @@ $user = $this->session->userdata('user');
                                         <div class="col-md-4 pr-1">
                                             <div class="form-group">
                                                 <label>City</label>
+
                                                 <input type="text" disabled="" class="form-control" placeholder="City" value="<?php echo $user1['TenantCity']?>">
+
                                             </div>
                                         </div>
                                         <div class="col-md-4 px-1">
                                             <div class="form-group">
                                                 <label>Country</label>
+
                                                 <input type="text" disabled="" class="form-control" placeholder="Country" value="<?php echo $user1['TenantCountry']?>">
+
                                             </div>
                                         </div>
                                         <div class="col-md-4 pl-1">
                                             <div class="form-group">
                                                 <label>Postal Code</label>
+
                                                 <input type="text" disabled="" class="form-control" placeholder="ZIP Code" value="<?php echo $user1['TenantPostal']?>">
+
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
+
 										<div class="col-md-4">
                                             <div class="button">
                                                 <a href="TenantDash_Profile_Edit"><button type="button" class="btn btn-success" style="background-color:#f96332">Edit</button></a>
+
                                             </div>
                                         </div>
                                     </div>
