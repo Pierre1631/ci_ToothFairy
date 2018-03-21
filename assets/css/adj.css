@@ -1,0 +1,23 @@
+.adjust > a:hover{
+	text-decoration: none;
+    margin-top: 10px;
+    padding-top: 6px;
+}
+.siglog > li > a {
+    color: #ff9900;
+}
+.siglog > li > a:hover {
+    background-color: #146eb4;
+    color: #fff;
+}
+.siglog > li > a:focus {
+    background-color: #146eb4;
+    color: #fff;
+}
+#sig {
+    margin-left: 25px;
+}
+li {
+    list-style-type:none;
+}
+}

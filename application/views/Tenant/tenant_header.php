@@ -4,11 +4,11 @@
 	<title>Clinic</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap-theme.min.css'); ?>" />
-	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
-	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url('assets/css/custom.css'); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets1/css/bootstrap.min.css'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets1/css/bootstrap-theme.min.css'); ?>" />
+	<script type="text/javascript" src="<?php echo base_url('assets1/js/jquery.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets1/js/bootstrap.min.js'); ?>"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url('assets1/css/custom.css'); ?>">
 </head>
 <body>
 	<div class="header">
@@ -36,14 +36,14 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="<?php echo site_url(''); ?>">
+						<a class="navbar-brand" href="<?php echo site_url('user'); ?>">
 							<img src="<?php echo base_url('assets/images/tenantlogo.png'); ?>" alt="responsive image" class="img-responsive pull-left" width="145"/>
 						</a>
 					</div>
 					<div class="collapse navbar-collapse" id="headercollapse">
 						<nav>
 							<ul class="nav navbar-nav">
-								<li><a href="<?php echo site_url(''); ?>"><b>HOME</b></a></li>
+								<li><a href="<?php echo site_url('user'); ?>"><b>HOME</b></a></li>
 								<li><a href=""><b>ABOUT US</b></a></li>
 								<li><a href=""><b>DENTISTS</b></a></li>
 								<li><a href=""><b>LOCATION</b></a></li>
