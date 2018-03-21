@@ -161,62 +161,27 @@ $user = $this->session->userdata('user');
                                           <th>First Name</th>
                                           <th>Last Name</th>
                                           <th>Dental Records</th>
-                                          <th>Transactions</th>
+                                          <th>Email</th>
                                         </tr>
                                       </thead>
                                       <tbody>
-                                        <tr class="gradeA">
-                                          <td>Ken123</td>
-                                          <td>Ken</td>
-                                          <td>Domingo</td>
-                                          <td>Domingo.pdf</td>
-                                          <td>Ken123</td>
-                                        </tr>
-                                      </tbody>
-                                      <tbody>
-                                        <tr class="gradeA">
-                                          <td>Ken123</td>
-                                          <td>Ken</td>
-                                          <td>Domingo</td>
-                                          <td>Domingo.pdf</td>
-                                          <td>Ken123</td>
-                                        </tr>
-                                      </tbody>
-                                      <tbody>
-                                        <tr class="gradeA">
-                                          <td>Ken123</td>
-                                          <td>Ken</td>
-                                          <td>Domingo</td>
-                                          <td>Domingo.pdf</td>
-                                          <td>Ken123</td>
-                                        </tr>
-                                      </tbody>
-                                      <tbody>
-                                        <tr class="gradeA">
-                                          <td>Ken123</td>
-                                          <td>Ken</td>
-                                          <td>Domingo</td>
-                                          <td>Domingo.pdf</td>
-                                          <td>Ken123</td>
-                                        </tr>
-                                      </tbody>
-                                      <tbody>
-                                        <tr class="gradeA">
-                                          <td>Ken123</td>
-                                          <td>Ken</td>
-                                          <td>Domingo</td>
-                                          <td>Domingo.pdf</td>
-                                          <td>Ken123</td>
-                                        </tr>
-                                      </tbody>
-                                      <tbody>
-                                        <tr class="gradeA">
-                                          <td>Ken123</td>
-                                          <td>Ken</td>
-                                          <td>Domingo</td>
-                                          <td>Domingo.pdf</td>
-                                          <td>Ken123</td>
-                                        </tr>
+                                        <?php
+                                        if($get_user){
+                                          $i=1;
+                                          foreach($get_user as $row){
+                                            $action = "<td>
+                                                      </td>";
+                                            echo "<tr>
+                                                      <td align='center'>",$row->UserID."</td>
+                                                      <td>".$row->UserFirstName."</td>
+                                                      <td>".$row->UserLastName."</td>
+                                                      <td></td>
+                                                      <td>".$row->UserEmail."</td>
+                                                  </tr>";
+                                                  $i++;
+                                          }
+                                        }
+                                        ?>
                                       </tbody>
                                     </table>
                                 </div>

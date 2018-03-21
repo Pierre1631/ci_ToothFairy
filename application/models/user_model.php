@@ -6,7 +6,7 @@ class user_model extends CI_model{
   	public function login_user($email,$pass){
 	    $this->db->select('*');
 	    $this->db->from('user');
-	    $this->db->where('TenantEmail',$email);
+	    $this->db->where('UserEmail',$email);
 	    $this->db->where('UserPass',$pass);
 	    if($query=$this->db->get()){
 	      	return $query->row_array();
@@ -26,6 +26,25 @@ class user_model extends CI_model{
 	    else{
 	      	return true;
 	    }
-  	} 
+  	}
+    public function getuser(){
+      $query=$this->db->get('user');
+      return $result = $query->result();
+    }
+
+    public function gettenantinfo(){
+      $query=$this->db->get('tenant');
+      return $query->result_array();
+    }
+
+    public function read($condition=null){
+  		$this->db->select('*');
+  		$this->db->from('Tenant');
+		  if( isset($condition) ) $this->db->where($condition);
+
+  		$query=$this->db->get();
+
+  		return $query->result_array();
+    }
 }
 ?>

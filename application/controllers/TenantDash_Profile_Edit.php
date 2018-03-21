@@ -43,7 +43,7 @@ class TenantDash_Profile_Edit extends CI_Controller {
 		else{
 			echo 'No Update done';
 		}
-		echo $pr;
+		redirect('TenantDash_Profile');
 	}
 	
 }	

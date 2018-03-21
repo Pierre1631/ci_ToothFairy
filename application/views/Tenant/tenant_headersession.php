@@ -10,13 +10,16 @@
 	<script type="text/javascript" src="<?php echo base_url('assets1/js/bootstrap.min.js'); ?>"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo base_url('assets1/css/custom.css'); ?>">
 </head>
+<?php
+//retrieve session
+$user = $this->session->userdata('user');
+?>
 <body>
 	<div class="header">
 		<div style="background-color: #146eb4">
 			<div class="container">
 				<ul class="siglog">
-					<li><a href="<?php echo site_url('user/login_view'); ?>"  class="pull-right" data-target="#LoginModal" data-toggle="modal"><span id="sig" class="glyphicon glyphicon-log-in"></span> <b>LOGIN</b></a></li>
-					<li><a href="<?php echo site_url('user/register_view'); ?>" class="pull-right" ><span class="glyphicon glyphicon-user"></span> <b>SIGN UP</b></a></li>
+					<li><a href="<?php echo site_url('user/login_view'); ?>"  class="pull-right" data-target="#LoginModal" data-toggle="modal"><span id="sig" class="glyphicon glyphicon-log-in"></span> <b><?php echo $user?></b></a></li>
 				</ul>
 			</div>
 		</div>
