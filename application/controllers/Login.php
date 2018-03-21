@@ -9,7 +9,7 @@ class Login extends CI_Controller {
 
 		if( !empty($user) )
 			redirect('index','refresh');
-		$this->load->model('user_model');
+		$this->load->model('tenant_model');
 	}
 
 	public function index()
@@ -18,13 +18,14 @@ class Login extends CI_Controller {
 	}
 	public function login_user()
 	{
-		$user_login=array(
-			'UserEmail'=>$this->input->post('user'),
-			'UserPass'=>sha1($this->input->post('pwd'))
+		$tenant_login=array(
+			'TenantEmail'=>$this->input->post('user'),
+			'TenantPass'=>$this->input->post('pwd')
 		);
-		$data=$this->user_model->login_user($user_login['UserEmail'],$user_login['UserPass']);
+		$data=$this->tenant_model->getTenantProfile($tenant_login['TenantEmail'],$tenant_login['TenantPass']);
 		if($data){
 			$this->session->set_userdata('user', $_POST['user']);
+			print_r($_SESSION);
 			redirect('TenantDash_Dashboard');
 		}
 		else{

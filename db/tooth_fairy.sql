@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 20, 2018 at 04:22 PM
+-- Generation Time: Mar 21, 2018 at 07:08 AM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 5.6.31
 
@@ -98,14 +98,19 @@ CREATE TABLE `tenant` (
   `TenantCompany` varchar(25) NOT NULL,
   `TenantEmail` varchar(25) NOT NULL,
   `TenantPass` varchar(25) NOT NULL,
-  `TenantFirstname` varchar(25) NOT NULL,
-  `TenantLastname` varchar(25) NOT NULL,
   `TenantAddress` varchar(50) NOT NULL,
   `TenantCity` varchar(25) NOT NULL,
   `TenantCountry` varchar(25) NOT NULL,
   `TenantPostal` varchar(25) NOT NULL,
   `TenantContact` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tenant`
+--
+
+INSERT INTO `tenant` (`TenantID`, `TenantCompany`, `TenantEmail`, `TenantPass`, `TenantAddress`, `TenantCity`, `TenantCountry`, `TenantPostal`, `TenantContact`) VALUES
+(1, 'Smiles', 'smile@yahoo.com', 'smile123', 'Nadurata Street', 'Caloocan City', 'Philippines', '1400', '09099165502');
 
 -- --------------------------------------------------------
 
@@ -140,6 +145,13 @@ CREATE TABLE `website` (
   `WebName` varchar(25) NOT NULL,
   `WebTemplate` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `website`
+--
+
+INSERT INTO `website` (`WebID`, `TenantID`, `WebName`, `WebTemplate`) VALUES
+(1, 1, 'Miles Smile', 'theme1');
 
 --
 -- Indexes for dumped tables
@@ -215,7 +227,7 @@ ALTER TABLE `payment`
 -- AUTO_INCREMENT for table `tenant`
 --
 ALTER TABLE `tenant`
-  MODIFY `TenantID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `TenantID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `user`
 --
@@ -225,7 +237,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `website`
 --
 ALTER TABLE `website`
-  MODIFY `WebID` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
+  MODIFY `WebID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

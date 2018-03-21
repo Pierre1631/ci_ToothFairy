@@ -166,38 +166,40 @@ $user = $this->session->userdata('user');
                                     <div class="row">
                                         <div class="col-md-4 pr-1">
                                             <div class="form-group">
-                                                <label>User ID</label>
-                                                <input type="text" class="form-control" name="UserID" disabled="" placeholder="User ID" value="">
+
+                                                <label>Company</label>
+                                                <input type="text" class="form-control" disabled="" placeholder="Company" value="<?php echo $user1['TenantCompany']?>">
+                                            </div>
+                                        </div>
+										<div class="col-md-5 pr-1" style="margin-left:20px">
+                                            <div class="form-group">
+                                                <label>Website Name</label>
+                                                <input type="text" class="form-control" disabled="" placeholder="Website Name" value="<?php echo $company['WebName']?>">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6 pr-1">
+										<div class="col-md-6">
                                             <div class="form-group">
-                                                <label>First Name</label>
-                                                <input type="text" class="form-control" name="UserFirstName" placeholder="First Name" value="">
+
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control" disabled="" placeholder="Email" value="<?php echo $user1['TenantEmail']?>">
                                             </div>
                                         </div>
-                                        <div class="col-md-6 pl-1">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Middle Name</label>
-                                                <input type="text" class="form-control" name="UserMiddleName" placeholder="Middle Name" value="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 pr-1">
-                                            <div class="form-group">
-                                                <label>Last Name</label>
-                                                <input type="text" class="form-control" name="UserLastName" placeholder="Last Name" value="">
+                                                <label>Contact</label>
+                                                <input type="text" disabled="" class="form-control" placeholder="Contact" value="<?php echo $user1['TenantContact']?>">
+
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12">
+										<div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Address</label>
-                                                <input type="text" class="form-control" name="UserAddress" placeholder="Home Address" value="">
+
+                                                <input type="text" disabled="" class="form-control" placeholder="Address" value="<?php echo $user1['TenantAddress']?>">
                                             </div>
                                         </div>
                                     </div>
@@ -205,65 +207,38 @@ $user = $this->session->userdata('user');
                                         <div class="col-md-4 pr-1">
                                             <div class="form-group">
                                                 <label>City</label>
-                                                <input type="text" class="form-control" name="UserCity" placeholder="City" value="">
+
+                                                <input type="text" disabled="" class="form-control" placeholder="City" value="<?php echo $user1['TenantCity']?>">
+
                                             </div>
                                         </div>
                                         <div class="col-md-4 px-1">
                                             <div class="form-group">
                                                 <label>Country</label>
-                                                <input type="text" class="form-control" name="UserCountry" placeholder="Country" value="">
+
+                                                <input type="text" disabled="" class="form-control" placeholder="Country" value="<?php echo $user1['TenantCountry']?>">
+
                                             </div>
                                         </div>
                                         <div class="col-md-4 pl-1">
                                             <div class="form-group">
                                                 <label>Postal Code</label>
-                                                <input type="number" class="form-control" name="UserPostalCode" placeholder="ZIP Code">
+
+                                                <input type="text" disabled="" class="form-control" placeholder="ZIP Code" value="<?php echo $user1['TenantPostal']?>">
+
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-4 pr-1">
-                                            <div class="form-row">
-                                                <button type="submit" class="btn btn-primary btn-round">Save</button>
+
+										<div class="col-md-4">
+                                            <div class="button">
+                                                <a href="TenantDash_Profile_Edit"><button type="button" class="btn btn-success" style="background-color:#f96332">Edit</button></a>
+
                                             </div>
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-user">
-                            <div class="image">
-                                <img src="assets/img//bg5.jpg" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <div class="author">
-                                    <a href="#">
-                                        <img class="avatar border-gray" src="assets/img//mike.jpg" alt="...">
-                                        <h5 class="title">Mike Andrew</h5>
-                                    </a>
-                                    <p class="description">
-                                        michael24
-                                    </p>
-                                </div>
-                                <p class="description text-center">
-                                    "Lamborghini Mercy
-                                    <br> Your chick she so thirsty
-                                    <br> I'm in that two seat Lambo"
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="button-container">
-                                <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
-                                    <i class="fab fa-facebook-f"></i>
-                                </button>
-                                <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
-                                    <i class="fab fa-twitter"></i>
-                                </button>
-                                <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
-                                    <i class="fab fa-google-plus-g"></i>
-                                </button>
                             </div>
                         </div>
                     </div>
