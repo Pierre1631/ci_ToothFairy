@@ -36,12 +36,12 @@ class user extends CI_Controller {
 		  		$this->session->set_flashdata('success_msg', 'Registered successfully, Dashboard under construction.');
 		  		redirect('user/register_view');
 			}
-			else{ 
+			else{
 		  		$this->session->set_flashdata('error_msg', 'Email already used, Please try again.');
 		  		redirect('user/register_view');
 			}
         }
-		
+
 	}
 	public function login_user(){
   		$user_login=array(
@@ -58,11 +58,13 @@ class user extends CI_Controller {
 	       	$this->session->set_userdata('UserBirthdate',$data['UserBirthdate']);
 	        $this->session->set_userdata('UserContact',$data['UserContact']);
 	        $this->session->set_userdata('UserGender',$data['UserGender']);
-    		echo "Login Successfully! ";
+    		redirect('tenant_home');
   		}
   		else{
 	        $this->session->set_flashdata('error_msg', 'Invalid Username or Password. Please try again.');
-	        redirect("user/login_view");
+					$this->load->view('Tenant/tenant_header');
+					$this->load->view('Tenant/TenantHomepage');
+					$this->load->view('Tenant/tenant_footer');
 	    }
 	}
 	public function register_view() {

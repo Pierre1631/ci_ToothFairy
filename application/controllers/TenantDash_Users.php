@@ -9,11 +9,15 @@ class TenantDash_Users extends CI_Controller {
 
 		if( empty($user) )
 			redirect('login','refresh');
+			$this->load->model('user_model', 'get_user');
 	}
 
 	public function index()
 	{
-
-    $this->load->view('Multitenancy/TenantDash/users');
-  }
+		$result = $this->get_user->getuser();
+		if(!empty($result)){
+			$data['get_user']=$result;
+			$this->load->view('Multitenancy/TenantDash/users', $data);
+  	}
+	}
 }

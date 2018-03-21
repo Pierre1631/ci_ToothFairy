@@ -231,6 +231,12 @@ $user = $this->session->userdata('user');
                                         </div>
                                     </div>
                                     <div class="row">
+                                        <div class="col-md-4">
+
+                                        <div class="col-md-4">
+                                            <div class="form-row">
+                                                <button type="submit" class="btn btn-primary btn-round">Save</button>
+
 
                                         <div class="col-md-4">
                                             <div class="form-row">
@@ -247,6 +253,16 @@ $user = $this->session->userdata('user');
                                         <div>
                                             <div class="form-row">
                                                 <a style="padding: 18px; text-decoration: none;" href="<?php echo base_url('user');?>">View Website</a>
+
+                                            </div>
+                                        </div>
+
+										
+                                        <div>
+                                            <div class="form-row">
+                                                <a style="padding: 18px; text-decoration: none;" href="<?php echo base_url('MilesSmile');?>">View Website</a>
+
+
                                             </div>
                                         </div>
                                     </div>
