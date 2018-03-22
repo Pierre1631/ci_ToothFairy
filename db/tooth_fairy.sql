@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2018 at 08:49 PM
+-- Generation Time: Mar 21, 2018 at 07:08 AM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 5.6.31
 
@@ -25,90 +25,66 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `AdminID` int(11) NOT NULL,
+  `AdminEmail` varchar(25) NOT NULL,
+  `AdminPass` varchar(25) NOT NULL,
+  `AdminUser` varchar(25) NOT NULL,
+  `AdminFirstname` varchar(25) NOT NULL,
+  `AdminLastname` varchar(25) NOT NULL,
+  `AdminAddress` varchar(25) NOT NULL,
+  `AdminCity` varchar(25) NOT NULL,
+  `AdminContact` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `appointment`
 --
 
 CREATE TABLE `appointment` (
-  `appointment_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `tenant_id` int(11) NOT NULL,
-  `service_id` int(11) NOT NULL,
-  `appointment_date` varchar(25) NOT NULL,
-  `appointment_time` varchar(25) NOT NULL,
-  `appointment_note` varchar(25) NOT NULL,
-  `tooth1` int(11) NOT NULL,
-  `tooth2` int(11) NOT NULL,
-  `tooth3` int(11) NOT NULL,
-  `tooth4` int(11) NOT NULL,
-  `tooth5` int(11) NOT NULL,
-  `tooth6` int(11) NOT NULL,
-  `tooth7` int(11) NOT NULL,
-  `tooth8` int(11) NOT NULL,
-  `tooth9` int(11) NOT NULL,
-  `tooth10` int(11) NOT NULL,
-  `tooth11` int(11) NOT NULL,
-  `tooth12` int(11) NOT NULL,
-  `tooth13` int(11) NOT NULL,
-  `tooth14` int(11) NOT NULL,
-  `tooth15` int(11) NOT NULL,
-  `tooth16` int(11) NOT NULL,
-  `tooth17` int(11) NOT NULL,
-  `tooth18` int(11) NOT NULL,
-  `tooth19` int(11) NOT NULL,
-  `tooth20` int(11) NOT NULL,
-  `tooth21` int(11) NOT NULL,
-  `tooth22` int(11) NOT NULL,
-  `tooth23` int(11) NOT NULL,
-  `tooth24` int(11) NOT NULL,
-  `tooth25` int(11) NOT NULL,
-  `tooth26` int(11) NOT NULL,
-  `tooth27` int(11) NOT NULL,
-  `tooth28` int(11) NOT NULL,
-  `tooth29` int(11) NOT NULL,
-  `tooth30` int(11) NOT NULL,
-  `tooth31` int(11) NOT NULL,
-  `tooth32` int(11) NOT NULL,
-  `teeth_service` int(11) NOT NULL
+  `AppointmentID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `TenantID` int(11) NOT NULL,
+  `AppointmentDate` varchar(25) NOT NULL,
+  `AppointmentTime` varchar(25) NOT NULL,
+  `AppointmentStatus` varchar(25) NOT NULL,
+  `AppointmentNote` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dentist`
+-- Table structure for table `messages`
 --
 
-CREATE TABLE `dentist` (
-  `dentist_id` int(11) NOT NULL,
-  `dentist_name` varchar(25) NOT NULL,
-  `dentist_description` varchar(200) NOT NULL
+CREATE TABLE `messages` (
+  `MessageID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `TenantID` int(11) NOT NULL,
+  `MessageSubject` varchar(25) NOT NULL,
+  `MessageNote` varchar(100) NOT NULL,
+  `MessageDate` varchar(25) NOT NULL,
+  `MessageTime` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `record`
+-- Table structure for table `payment`
 --
 
-CREATE TABLE `record` (
-  `record_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `appointment_id` int(11) NOT NULL,
-  `record_date` varchar(25) NOT NULL,
-  `record_time` varchar(25) NOT NULL,
-  `record_note` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `service`
---
-
-CREATE TABLE `service` (
-  `service_id` int(11) NOT NULL,
-  `service_name` varchar(25) NOT NULL,
-  `service_description` varchar(200) NOT NULL,
-  `service status` varchar(25) NOT NULL
+CREATE TABLE `payment` (
+  `PaymentID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `TenantID` int(11) NOT NULL,
+  `PaymentDate` varchar(25) NOT NULL,
+  `PaymentTime` varchar(25) NOT NULL,
+  `PaymentAmount` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -118,22 +94,23 @@ CREATE TABLE `service` (
 --
 
 CREATE TABLE `tenant` (
-  `tenant_id` int(11) NOT NULL,
-  `tenant_email` varchar(100) NOT NULL,
-  `tenant_pass` varchar(100) NOT NULL,
-  `tenant_company` varchar(25) NOT NULL,
-  `tenant_address` varchar(25) NOT NULL,
-  `tenant_city` varchar(25) NOT NULL,
-  `tenant_postal` varchar(25) NOT NULL,
-  `tenant_contact` varchar(25) NOT NULL
+  `TenantID` int(11) NOT NULL,
+  `TenantCompany` varchar(25) NOT NULL,
+  `TenantEmail` varchar(25) NOT NULL,
+  `TenantPass` varchar(25) NOT NULL,
+  `TenantAddress` varchar(50) NOT NULL,
+  `TenantCity` varchar(25) NOT NULL,
+  `TenantCountry` varchar(25) NOT NULL,
+  `TenantPostal` varchar(25) NOT NULL,
+  `TenantContact` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tenant`
 --
 
-INSERT INTO `tenant` (`tenant_id`, `tenant_email`, `tenant_pass`, `tenant_company`, `tenant_address`, `tenant_city`, `tenant_postal`, `tenant_contact`) VALUES
-(1, 'luwelle_29@yahoo.com', '7ba5bbed7a66fa18f436192bdbf63ea50924a2ec', 'Miles Smile', '198 block something', 'Quezon City', '1400', '0961619990');
+INSERT INTO `tenant` (`TenantID`, `TenantCompany`, `TenantEmail`, `TenantPass`, `TenantAddress`, `TenantCity`, `TenantCountry`, `TenantPostal`, `TenantContact`) VALUES
+(1, 'Smiles', 'smile@yahoo.com', 'smile123', 'Nadurata Street', 'Caloocan City', 'Philippines', '1400', '09099165502');
 
 -- --------------------------------------------------------
 
@@ -142,18 +119,18 @@ INSERT INTO `tenant` (`tenant_id`, `tenant_email`, `tenant_pass`, `tenant_compan
 --
 
 CREATE TABLE `user` (
-  `user_id` int(11) NOT NULL,
-  `user_email` varchar(100) NOT NULL,
-  `user_pass` varchar(100) NOT NULL,
-  `user_fname` varchar(25) NOT NULL,
-  `user_lname` varchar(25) NOT NULL,
-  `user_mname` varchar(25) NOT NULL,
-  `user_address` varchar(25) NOT NULL,
-  `user_city` varchar(25) NOT NULL,
-  `user_zip` varchar(25) NOT NULL,
-  `user_contact` varchar(25) NOT NULL,
-  `user_birthday` varchar(25) NOT NULL,
-  `user_gender` varchar(25) NOT NULL
+  `UserID` int(11) NOT NULL,
+  `UserEmail` varchar(25) NOT NULL,
+  `UserPass` varchar(25) NOT NULL,
+  `UserFirstName` varchar(25) NOT NULL,
+  `UserLastName` varchar(25) NOT NULL,
+  `UserMiddleName` varchar(25) NOT NULL,
+  `UserBirthday` varchar(25) NOT NULL,
+  `UserAddress` varchar(50) NOT NULL,
+  `UserCity` varchar(25) NOT NULL,
+  `UserPostal` varchar(25) NOT NULL,
+  `UserContact` varchar(25) NOT NULL,
+  `UserGender` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -163,104 +140,104 @@ CREATE TABLE `user` (
 --
 
 CREATE TABLE `website` (
-  `web_id` int(11) NOT NULL,
-  `tenant_id` int(11) NOT NULL,
-  `web_name` varchar(50) NOT NULL,
-  `template` varchar(25) NOT NULL
+  `WebID` int(11) NOT NULL,
+  `TenantID` int(11) NOT NULL,
+  `WebName` varchar(25) NOT NULL,
+  `WebTemplate` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `website`
 --
 
-INSERT INTO `website` (`web_id`, `tenant_id`, `web_name`, `template`) VALUES
-(1, 1, 'Miles Smile', 'template1');
+INSERT INTO `website` (`WebID`, `TenantID`, `WebName`, `WebTemplate`) VALUES
+(1, 1, 'Miles Smile', 'theme1');
 
 --
 -- Indexes for dumped tables
 --
 
 --
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`AdminID`);
+
+--
 -- Indexes for table `appointment`
 --
 ALTER TABLE `appointment`
-  ADD PRIMARY KEY (`appointment_id`);
+  ADD PRIMARY KEY (`AppointmentID`);
 
 --
--- Indexes for table `dentist`
+-- Indexes for table `messages`
 --
-ALTER TABLE `dentist`
-  ADD PRIMARY KEY (`dentist_id`);
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`MessageID`);
 
 --
--- Indexes for table `record`
+-- Indexes for table `payment`
 --
-ALTER TABLE `record`
-  ADD PRIMARY KEY (`record_id`);
-
---
--- Indexes for table `service`
---
-ALTER TABLE `service`
-  ADD PRIMARY KEY (`service_id`);
+ALTER TABLE `payment`
+  ADD PRIMARY KEY (`PaymentID`);
 
 --
 -- Indexes for table `tenant`
 --
 ALTER TABLE `tenant`
-  ADD PRIMARY KEY (`tenant_id`);
+  ADD PRIMARY KEY (`TenantID`);
 
 --
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`user_id`);
+  ADD PRIMARY KEY (`UserID`);
 
 --
 -- Indexes for table `website`
 --
 ALTER TABLE `website`
-  ADD PRIMARY KEY (`web_id`);
+  ADD PRIMARY KEY (`WebID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `AdminID` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `appointment_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `AppointmentID` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `dentist`
+-- AUTO_INCREMENT for table `messages`
 --
-ALTER TABLE `dentist`
-  MODIFY `dentist_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `messages`
+  MODIFY `MessageID` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `record`
+-- AUTO_INCREMENT for table `payment`
 --
-ALTER TABLE `record`
-  MODIFY `record_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `service`
---
-ALTER TABLE `service`
-  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `payment`
+  MODIFY `PaymentID` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tenant`
 --
 ALTER TABLE `tenant`
-  MODIFY `tenant_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `TenantID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `website`
 --
 ALTER TABLE `website`
-  MODIFY `web_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
+  MODIFY `WebID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
