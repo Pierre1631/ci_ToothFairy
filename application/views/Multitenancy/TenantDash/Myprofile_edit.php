@@ -156,13 +156,13 @@ $user = $this->session->userdata('user');
                                         <div class="col-md-5 pr-1">
                                             <div class="form-group">
                                                 <label>Company</label>
-                                                <input type="text" class="form-control" disabled="" name="Company" placeholder="Company" value="<?php echo $user1['TenantCompany']?>">
+                                                <input type="text" class="form-control" disabled="" name="Company" placeholder="Company" value="<?php echo $user1['tenant_company']?>">
                                             </div>
                                         </div>
 										<div class="col-md-5 pr-1" style="margin-left:20px">
                                             <div class="form-group">
                                                 <label>Website Name</label>
-                                                <input type="text" class="form-control" disabled="" name="Website" placeholder="Website Name" value="<?php echo $company['WebName']?>">
+                                                <input type="text" class="form-control" name="Website" placeholder="Website Name" value="<?php echo $company['web_name']?>">
                                             </div>
                                         </div>
                                     </div>
@@ -170,13 +170,13 @@ $user = $this->session->userdata('user');
 										<div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" disabled="" name="Email" placeholder="Email" value="<?php echo $user1['TenantEmail']?>">
+                                                <input type="email" class="form-control" disabled="" name="Email" placeholder="Email" value="<?php echo $user1['tenant_email']?>">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Contact</label>
-                                                <input type="text" class="form-control" placeholder="Contact" name="Contact" value="<?php echo $user1['TenantContact']?>">
+                                                <input type="text" class="form-control" placeholder="Contact" name="Contact" value="<?php echo $user1['tenant_contact']?>">
                                             </div>
                                         </div>
                                     </div>
@@ -184,7 +184,7 @@ $user = $this->session->userdata('user');
 										<div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Address</label>
-                                                <input type="text" class="form-control" placeholder="Address" name="Address" value="<?php echo $user1['TenantAddress']?>">
+                                                <input type="text" class="form-control" placeholder="Address" name="Address" value="<?php echo $user1['tenant_address']?>">
                                             </div>
                                         </div>
                                     </div>
@@ -192,24 +192,18 @@ $user = $this->session->userdata('user');
                                         <div class="col-md-4 pr-1">
                                             <div class="form-group">
                                                 <label>City</label>
-                                                <input type="text" class="form-control" placeholder="City" name="City" value="<?php echo $user1['TenantCity']?>">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 px-1">
-                                            <div class="form-group">
-                                                <label>Country</label>
-                                                <input type="text" class="form-control" placeholder="Country" name="Country" value="<?php echo $user1['TenantCountry']?>">
+                                                <input type="text" class="form-control" placeholder="City" name="City" value="<?php echo $user1['tenant_city']?>">
                                             </div>
                                         </div>
                                         <div class="col-md-4 pl-1">
                                             <div class="form-group">
                                                 <label>Postal Code</label>
-                                                <input type="text" class="form-control" placeholder="ZIP Code" name="ZipCode" value="<?php echo $user1['TenantPostal']?>">
+                                                <input type="text" class="form-control" placeholder="ZIP Code" name="ZipCode" value="<?php echo $user1['tenant_postal']?>">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-										<div class="col-md-4">  
+										<div class="col-md-4">
                                             <input type="submit" class="btn btn-success" value="Save" style="background-color:#f96332">
 											<a href="TenantDash_Profile"><button type="button" class="btn btn-success" style="background-color:#f96332">Cancel</button></a>
                                         </div>
@@ -218,7 +212,7 @@ $user = $this->session->userdata('user');
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <footer class="footer">
