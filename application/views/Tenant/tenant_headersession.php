@@ -12,14 +12,15 @@
 </head>
 <?php
 //retrieve session
-$user = $this->session->userdata('user');
+$tenant = $this->session->userdata('UserEmail');
 ?>
 <body>
 	<div class="header">
 		<div style="background-color: #146eb4">
 			<div class="container">
 				<ul class="siglog">
-					<li><a href="<?php echo site_url('user/login_view'); ?>"  class="pull-right" data-target="#LoginModal" data-toggle="modal"><span id="sig" class="glyphicon glyphicon-log-in"></span> <b><?php echo $user?></b></a></li>
+					<li><a href=""  class="pull-right"><span id="sig" class="glyphicon glyphicon-user"></span> <b><?php echo $tenant?></b></a></li>
+					<li><a href="<?php echo base_url('user/logout');?>"  class="pull-right"><span class="glyphicon glyphicon-log-in"></span> <b>Sign Out</b></a></li>
 				</ul>
 			</div>
 		</div>
