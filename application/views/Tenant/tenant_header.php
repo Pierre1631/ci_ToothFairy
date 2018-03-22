@@ -49,7 +49,7 @@
 								<li><a href=""><b>LOCATION</b></a></li>
 								<li><a href=""><b>SERVICES</b></a></li>
 								<li><a href=""><b>UPDATES</b></a></li>
-								<li><a href=""><b>MAKE AN APPOINTMENT</b></a></li>
+								<li><a href="<?php echo site_url('appointment'); ?>"><b>MAKE AN APPOINTMENT</b></a></li>
 							</ul>
 						</nav>
 					</div>
