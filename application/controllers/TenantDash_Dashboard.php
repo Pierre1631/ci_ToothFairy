@@ -5,8 +5,8 @@ class TenantDash_Dashboard extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		//$user =  $this->session->userdata('user');
-		$user =  $_SESSION['user'];
+		$user =  $this->session->userdata('user');
+		//$user =  $_SESSION['user'];
 
 		if( empty($user) )
 			redirect('login','refresh');

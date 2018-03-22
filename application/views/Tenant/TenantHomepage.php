@@ -1,4 +1,4 @@
-	
+
 	<div id="FirstCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#FirstCarousel" data-slide-to="0" class="active"></li>
@@ -11,7 +11,7 @@
 						<h3>to edit this go to <span>line 10.</span></h3>
 						<p>application/views/TenantHomepage.php</p>
 						<h6>Lorem ipsum dolor sit amet  consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</h6>
-					</div>	
+					</div>
 				</div>
 			</div>
 			<div class="item item1">
@@ -57,7 +57,7 @@
 						<h5>line 54</h5>
 						<h5>line 55</h5>
 					</div>
-					<div class="col-md-4 col-sm-4 ab1 agileits-about-grid3">				
+					<div class="col-md-4 col-sm-4 ab1 agileits-about-grid3">
 						<h4 class="agileinfo-head">To edit this go to line 58</h4>
 						<p>To edit this go to line 59</p>
 						<h5>line 60</h5>
@@ -86,7 +86,7 @@
 						<h4>Emergency Cases</h4>
 						<h5><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>09123456789</h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-					</div>			
+					</div>
 					<div class="clearfix"></div>
 				</div>
 			  </div>
@@ -95,7 +95,7 @@
 
 	<div class="services">
 		<div class="container">
-			<h3 class="heading-agileinfo">Treatments<span>To edit this go to line 93 of views/TenantHomepage.php</span></h3>	
+			<h3 class="heading-agileinfo">Treatments<span>To edit this go to line 93 of views/TenantHomepage.php</span></h3>
 			<div class="services-top-grids">
 				<div class="col-md-4">
 					<div class="grid1">

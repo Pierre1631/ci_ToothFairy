@@ -19,10 +19,10 @@ class Login extends CI_Controller {
 	public function login_user()
 	{
 		$tenant_login=array(
-			'TenantEmail'=>$this->input->post('user'),
-			'TenantPass'=>$this->input->post('pwd')
+			'tenant_email'=>$this->input->post('user'),
+			'tenant_pass'=>sha1($this->input->post('pwd'))
 		);
-		$data=$this->tenant_model->getTenantProfile($tenant_login['TenantEmail'],$tenant_login['TenantPass']);
+		$data=$this->tenant_model->getTenantProfile($tenant_login['tenant_email'],$tenant_login['tenant_pass']);
 		if($data){
 			$this->session->set_userdata('user', $_POST['user']);
 			print_r($_SESSION);

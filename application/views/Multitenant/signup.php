@@ -176,13 +176,13 @@
                   <span class="input-group-addon">
                     <i class="now-ui-icons users_circle-08"></i>
                   </span>
-                  <input class="form-control" placeholder="Email" type="Email" name="UserEmail" required />
+                  <input class="form-control" placeholder="Email" type="Email" name="Email" required />
                 </div>
                 <div class="input-group form-group-no-border input-lg">
                   <span class="input-group-addon">
                     <i class="now-ui-icons text_caps-small"></i>
                   </span>
-                  <input class="form-control" type="password" placeholder="Password" name="UserPass" required />
+                  <input class="form-control" type="password" placeholder="Password" name="Pass" required />
                 </div>
                 <div class="input-group form-group-no-border input-lg">
                   <span class="input-group-addon">
