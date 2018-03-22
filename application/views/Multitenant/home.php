@@ -190,7 +190,7 @@
           <div class="row testimonials">
             <div class="col-sm-4">
               <blockquote><i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
+                <p>Customer service represents the heart of a brand in the hearts of its customers.</p>
                 <div class="clients-name">
                   <p><strong>John Doe</strong><br>
                     <em>CEO, Company Inc.</em></p>
@@ -199,7 +199,7 @@
             </div>
             <div class="col-sm-4">
               <blockquote><i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
+                <p>Customer service is an opportunity to exceed your customer's expectations.</p>
                 <div class="clients-name">
                   <p><strong>Jane Doe</strong><br>
                     <em>CEO, Company Inc.</em></p>
@@ -208,7 +208,7 @@
             </div>
             <div class="col-sm-4">
               <blockquote><i class="fa fa-quote-left"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
+                <p>Customer service is a voluntary act that demonstrates a genuine desire to satisfy, if not delight, a customer.</p>
                 <div class="clients-name">
                   <p><strong>Chris Smith</strong><br>
                     <em>CEO, Company Inc.</em></p>
