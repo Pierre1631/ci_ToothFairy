@@ -39,7 +39,7 @@ class user_model extends CI_model{
 
     public function read($condition=null){
   		$this->db->select('*');
-  		$this->db->from('Tenant');
+  		$this->db->from('tenant');
 		  if( isset($condition) ) $this->db->where($condition);
 
   		$query=$this->db->get();

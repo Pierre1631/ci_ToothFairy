@@ -14,7 +14,7 @@ class TenantDash_Profile_Edit extends CI_Controller {
 	public function index()
 	{
 		$data=$this->get_Info();
-		$data1=$this->get_Web($data['TenantID']);
+		$data1=$this->get_Web($data['tenant_id']);
 		$data2 = array(
 			'user1'=>$data,
 			'company'=>$data1);
@@ -33,11 +33,10 @@ class TenantDash_Profile_Edit extends CI_Controller {
 	public function edit(){
 		if(isset($_SESSION['user'])){
 			$data = array(
-					'TenantContact' => $_POST['Contact'],
-				 	'TenantAddress' => $_POST['Address'],
-				 	'TenantCity'   => $_POST['City'],
-					'TenantCountry' => $_POST['Country'],
-				 	'TenantPostal'   => $_POST['ZipCode']);
+					'tenant_contact' => $_POST['Contact'],
+				 	'Tenant_address' => $_POST['Address'],
+				 	'tenant_city'   => $_POST['City'],
+				 	'tenant_postal'   => $_POST['ZipCode']);
 			$pr = $this->tenant_model->update_info($_SESSION['user'],$data);
 		}
 		else{
