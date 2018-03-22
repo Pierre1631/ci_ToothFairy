@@ -150,26 +150,6 @@
                                                 <th>Transactions</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                           
-                                            <tr class="gradeA">
-                                                <td>Ken123</td>
-                                                <td>Ken</td>
-                                                <td>Domingo</td>
-                                                <td>Domingo.pdf</td>
-                                                <td>Ken123</td>
-                                            </tr>
-                                            
-                                             <tr class="gradeA">
-                                                <td>Ken123</td>
-                                                <td>Ken</td>
-                                                <td>Domingo</td>
-                                                <td>Domingo.pdf</td>
-                                                <td>Ken123</td>
-                                            </tr>
-                                           
-                                            </tr>
-                                        </tbody>
                                     </table>
                                 </div>
                             </div>

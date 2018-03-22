@@ -18,6 +18,11 @@ class TenantDash_Users extends CI_Controller {
 		if(!empty($result)){
 			$data['get_user']=$result;
 			$this->load->view('Multitenancy/TenantDash/users', $data);
-  	}
+		}
+	}
+	public function delete($id){
+		$this->db->where('user_id',$id);
+		$this->db->delete('user');
+		$this->load->view('Multitenancy/TenantDash/');
 	}
 }

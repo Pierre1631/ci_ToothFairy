@@ -150,7 +150,7 @@ $user = $this->session->userdata('user');
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Users</h4>
-                                <a href="TenantDash_Delete"><button class="btn btn-danger btn-round">Delete User</button></a>
+                             
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -160,7 +160,6 @@ $user = $this->session->userdata('user');
                                           <th>User ID</th>
                                           <th>First Name</th>
                                           <th>Last Name</th>
-                                          <th>Dental Records</th>
                                           <th>Email</th>
                                         </tr>
                                       </thead>
@@ -171,13 +170,14 @@ $user = $this->session->userdata('user');
                                           foreach($get_user as $row){
                                             $action = "<td>
                                                       </td>";
-                                            echo "<tr>
-                                                      <td align='center'>",$row->UserID."</td>
-                                                      <td>".$row->UserFirstName."</td>
-                                                      <td>".$row->UserLastName."</td>
-                                                      <td></td>
-                                                      <td>".$row->UserEmail."</td>
-                                                  </tr>";
+                                            echo '<tr>
+                                                      <td align="center">',$row->user_id.'</td>
+                                                      <td>'.$row->user_fname.'</td>
+                                                      <td>'.$row->user_lname.'</td>
+                                                      <td>'.$row->user_email.'</td>
+													  <td><a href="TenantDash_users/delete/'.$row->user_id.'">delete</a><td>
+
+                                                  </tr>';
                                                   $i++;
                                           }
                                         }
