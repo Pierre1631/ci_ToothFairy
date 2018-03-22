@@ -153,25 +153,25 @@
         <div class="col-md-3 col-sm-6">
           <div class="service"> <i class="fa fa-folder-open-o"></i>
             <h3>Records Management</h3>
-            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+            <p>is an organizational function devoted to the management of information in an organization throughout its life cycle, from the time of creation or inscription to its eventual disposition.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="service"> <i class="fa fa-gear"></i>
             <h3>Records Integration</h3>
-            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
+            <p>Recognizes that records follow a life-cycle and acknowledges the importance of caring for those records through a continuum of concept.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="service"> <i class="fa fa-calendar"></i>
             <h3>Records Scheduling</h3>
-            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+            <p>Table that describes length of time each document or record will be retained as an active record.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="service"><i class="fa fa-credit-card"></i>
             <h3>Bill Management</h3>
-            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+            <p>Bill management is the process of budgeting, saving, investing, spending or otherwise overseeing the capital usage of an individual or group..</p>
           </div>
         </div>
       </div>
