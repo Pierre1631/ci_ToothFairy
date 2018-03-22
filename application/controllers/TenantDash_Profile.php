@@ -9,13 +9,13 @@ class TenantDash_Profile extends CI_Controller {
 		$this->load->model('tenant_model');
 		if( empty($user) )
 			redirect('login','refresh');
-		$this->load->model('user_model');
+		$this->load->model('tenant_model');
 	}
 
 	public function index()
 	{
 		$data=$this->get_Info();
-		$data1=$this->get_Web($data['TenantID']);
+		$data1=$this->get_Web($data['tenant_id']);
 		$data2 = array(
 			'user1'=>$data,
 			'company'=>$data1);

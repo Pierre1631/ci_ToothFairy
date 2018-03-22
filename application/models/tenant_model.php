@@ -46,5 +46,12 @@ class tenant_model extends CI_model{
 		$this->db->update('tenant',$data);
 		return TRUE;
 	}
+	public function get_Info(){
+		$this->db->select('*');
+		$this->db->from('tenant');
+		$this->db->where('tenant_email',$_SESSION['user']);
+		$query=$this->db->get();
+		return $query->row_array();
+	}
 }
 ?>

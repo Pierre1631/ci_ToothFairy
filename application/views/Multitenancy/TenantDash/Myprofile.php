@@ -169,13 +169,13 @@ $user = $this->session->userdata('user');
                                             <div class="form-group">
 
                                                 <label>Company</label>
-                                                <input type="text" class="form-control" disabled="" placeholder="Company" value="<?php echo $user1['TenantCompany']?>">
+                                                <input type="text" class="form-control" disabled="" placeholder="Company" value="<?php echo $user1['tenant_company']?>">
                                             </div>
                                         </div>
 										<div class="col-md-5 pr-1" style="margin-left:20px">
                                             <div class="form-group">
                                                 <label>Website Name</label>
-                                                <input type="text" class="form-control" disabled="" placeholder="Website Name" value="<?php echo $company['WebName']?>">
+                                                <input type="text" class="form-control" disabled="" placeholder="Website Name" value="<?php echo $company['web_name']?>">
                                             </div>
                                         </div>
                                     </div>
@@ -184,13 +184,13 @@ $user = $this->session->userdata('user');
                                             <div class="form-group">
 
                                                 <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" disabled="" placeholder="Email" value="<?php echo $user1['TenantEmail']?>">
+                                                <input type="email" class="form-control" disabled="" placeholder="Email" value="<?php echo $user1['tenant_email']?>">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Contact</label>
-                                                <input type="text" disabled="" class="form-control" placeholder="Contact" value="<?php echo $user1['TenantContact']?>">
+                                                <input type="text" disabled="" class="form-control" placeholder="Contact" value="<?php echo $user1['tenant_contact']?>">
 
                                             </div>
                                         </div>
@@ -200,7 +200,7 @@ $user = $this->session->userdata('user');
                                             <div class="form-group">
                                                 <label>Address</label>
 
-                                                <input type="text" disabled="" class="form-control" placeholder="Address" value="<?php echo $user1['TenantAddress']?>">
+                                                <input type="text" disabled="" class="form-control" placeholder="Address" value="<?php echo $user1['tenant_address']?>">
                                             </div>
                                         </div>
                                     </div>
@@ -209,15 +209,7 @@ $user = $this->session->userdata('user');
                                             <div class="form-group">
                                                 <label>City</label>
 
-                                                <input type="text" disabled="" class="form-control" placeholder="City" value="<?php echo $user1['TenantCity']?>">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 px-1">
-                                            <div class="form-group">
-                                                <label>Country</label>
-
-                                                <input type="text" disabled="" class="form-control" placeholder="Country" value="<?php echo $user1['TenantCountry']?>">
+                                                <input type="text" disabled="" class="form-control" placeholder="City" value="<?php echo $user1['tenant_city']?>">
 
                                             </div>
                                         </div>
@@ -225,7 +217,7 @@ $user = $this->session->userdata('user');
                                             <div class="form-group">
                                                 <label>Postal Code</label>
 
-                                                <input type="text" disabled="" class="form-control" placeholder="ZIP Code" value="<?php echo $user1['TenantPostal']?>">
+                                                <input type="text" disabled="" class="form-control" placeholder="ZIP Code" value="<?php echo $user1['tenant_postal']?>">
 
                                             </div>
                                         </div>
