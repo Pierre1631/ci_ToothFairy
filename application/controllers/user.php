@@ -6,6 +6,7 @@ class user extends CI_Controller {
 		$this->load->model('user_model');
 	}
 	public function index()	{
+		session_destroy();
 		$this->load->view('Tenant/tenant_header');
 		$this->load->view('Tenant/TenantHomepage');
 		$this->load->view('Tenant/tenant_footer');

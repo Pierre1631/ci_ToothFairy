@@ -1,5 +1,6 @@
 <?php
 class tenant_model extends CI_model{
+
 	public function register_user($user){
     	$this->db->insert('tenant', $user);
   	}
@@ -52,6 +53,9 @@ class tenant_model extends CI_model{
 		$this->db->where('tenant_email',$_SESSION['user']);
 		$query=$this->db->get();
 		return $query->row_array();
+	}
+	public function web_change(){
+		
 	}
 }
 ?>

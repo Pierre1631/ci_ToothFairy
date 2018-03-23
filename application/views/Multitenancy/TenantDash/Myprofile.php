@@ -68,6 +68,12 @@ $user = $this->session->userdata('user');
                         </a>
                     </li>
                     <li>
+                        <a href="TenantDash_records">
+                            <i class="now-ui-icons users_circle-08"></i>
+                            <p>Records</p>
+                        </a>
+                    </li>
+                    <li>
                         <a href="TenantDash_Transactions">
                             <i class="now-ui-icons business_globe"></i>
                             <p>Transactions</p>
@@ -170,6 +176,7 @@ $user = $this->session->userdata('user');
 
                                                 <label>Company</label>
                                                 <input type="text" class="form-control" disabled="" placeholder="Company" value="<?php echo $user1['tenant_company']?>">
+                                
                                             </div>
                                         </div>
 										<div class="col-md-5 pr-1" style="margin-left:20px">

@@ -1,200 +1,252 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/AdminDash/img/apple-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/AdminDash/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-    <title>Tooth Fairy</title>
-
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
-
-
-    <!-- Bootstrap core CSS     -->
-    <link href="assets/AdminDash/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Animation library for notifications   -->
-    <link href="assets/AdminDash/css/animate.min.css" rel="stylesheet"/>
-
-    <!--  Paper Dashboard core CSS    -->
-    <link href="assets/AdminDash/css/paper-dashboard.css" rel="stylesheet"/>
-
-
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="assets/AdminDash/css/demo.css" rel="stylesheet" />
-
-
-    <!--  Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-    <link href="assets/AdminDash/css/themify-icons.css" rel="stylesheet">
-
+    <title>My Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="assets/demo/demo.css" rel="stylesheet" />
 </head>
-<body>
+<?php
+//retrieve session
+$user = $this->session->userdata('user');
+?>
+<body class="">
 
-<div class="wrapper">
-    <div class="sidebar" data-background-color="black" data-active-color="info">
-
-    <!--
-        Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
-        Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+    <div class="wrapper ">
+        <div class="sidebar" data-color="orange">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
-
-     <div class="sidebar-wrapper">
             <div class="logo">
-                <a href="Home" class="simple-text">
-                    HOME
+                <a href="home" class="simple-text logo-mini">
+                    ANC
+                </a>
+                <a href="home" class="simple-text logo-normal">
+                    Tooth Fairy
                 </a>
             </div>
-
-            <ul class="nav">
-                <li class="active">
-                    <a href="TenantDash">
-                        <i class="ti-home"></i>
-                        <p>Dashboard</p>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="TenantDash_users">
-                        <i class="ti-view-list-alt"></i>
-                        <p>Users</p>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="TenantDash_records">
-                        <i class="ti-agenda"></i>
-                        <p>Patient Records</p>
-                    </a>
-                </li>
-                  <li>
-                    <a href="TenantDash_Transactions">
-                        <i class="ti-server"></i>
-                        <p>Transactions</p>
-                    </a>
-                </li>
-                  <li>
-                    <a href="TenantDash_Inbox">
-                        <i class="ti-pie-chart"></i>
-                        <p>Messages</p>
-                    </a>
-                </li>
-                  <li>
-                    <a href="TenantDash_website">
-                        <i class="ti-desktop"></i>
-                        <p>Website Management</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-   
-    </div>
-
-    <div class="main-panel">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    
-                    <a class="navbar-brand" href="#">Dashboard</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                       
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-bell"></i>
-                                    <b class="caret"></b>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Log out</a></li>
-                                <li><a href="#">Settings</a></li>
-                              </ul>
-                        </li>
-                    </ul>
-                </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li>
+                        <a href="TenantDash_Dashboard">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="TenantDash_Profile">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>My Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="TenantDash_users">
+                            <i class="now-ui-icons users_circle-08"></i>
+                            <p>Users</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="TenantDash_records">
+                            <i class="now-ui-icons users_circle-08"></i>
+                            <p>Records</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="TenantDash_Transactions">
+                            <i class="now-ui-icons business_globe"></i>
+                            <p>Transactions</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="TenantDash_Messages">
+                            <i class="now-ui-icons ui-2_chat-round"></i>
+                            <p>Messages</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="TenantDash_Website">
+                            <i class="now-ui-icons design-2_ruler-pencil"></i>
+                            <p>Website Management</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="TenantDash_Users">Users</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Stats</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="now-ui-icons location_world"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="now-ui-icons users_single-02"></i>
+                                <p><?php echo $user; ?></p>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="#">My Profile</a>
+                                  <a class="dropdown-item" href="logout">Log out</a>
+                              </div>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm">
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Records</h4>
+                             
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                      <thead class="text-primary">
+                                        <tr>
+                                          <th>ID</th>
+                                          <th>User</th>
+                                          <th>Date</th>
+                                          <th>Time</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <?php
+                                                if ( isset($result)) {
+                                                    foreach ($result as $r) {
 
-
-
-         <div class="row-fluid">
-                        <!-- block -->
-                        <div class="block">
-                            
-                            <div class="block-content collapse in">
-                                <div class="span12">
-
-                                   <div class="table-toolbar">
-
-                                      <div class="btn-group">
-                                         <a href="AdminDash_Add"><button class="btn btn-success">Add New <i class="icon-plus icon-white"></i></button></a>
-                                      </div>
-                                      <form action="#" class="pull-right mail-src-position">
-                                        <div class="input-append">
-                                            <input type="text" class="form-control " placeholder="Search">
-                                        </div>
-                                      </form>
-                                      
-                                   </div>
-                                    
-                                    <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example2">
-                                        <thead>
-                                            <tr>
-                                                <th>User ID</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Dental Records</th>
-                                                <th>Transactions</th>
-                                            </tr>
-                                        </thead>
+                                                        echo '
+                                                            <tr>
+                                                                <td>'.$r['id'].'</td>
+                                                                <td>'.$r['userid']['user_fname']." ".$r['userid']['user_lname'].'</td>    
+                                                                <td>'.$r['date'].'</td>
+                                                                <td>'.$r['time'].'</td>
+                                                            </tr>
+                                                        ';
+                                                    }
+                                                }
+                                            ?>
+                                      </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                </div>
+                    </div>
+                </diV>
             </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                                    <nav>
+                                            <ul>
+                                                    <li>
+                                                            <a href="home">
+                                                                    Tooth Fairy
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href="aboutus">
+                                                                    About Us
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                            <a href="blog">
+                                                                    Blog
+                                                            </a>
+                                                    </li>
+                                            </ul>
+                                    </nav>
+                                    <div class="copyright">
+                                            &copy;
+                                            <script>
+                                                    document.write(new Date().getFullYear())
+                                            </script>, Designed by
+                                            <a href="#" target="_blank">ANC</a>. Coded by
+                                            <a href="#" target="_blank">Wisdom Tooth</a>.
+                                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-</div>
-
-
 </body>
-
-    <!--   Core JS Files   -->
-    <script src="assets/AdminDash/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/AdminDash/js/bootstrap.min.js" type="text/javascript"></script>
-
-	<!--  Checkbox, Radio & Switch Plugins -->
-	<script src="assets/AdminDash/js/bootstrap-checkbox-radio.js"></script>
-
-	<!--  Charts Plugin -->
-	<script src="assets/AdminDash/js/chartist.min.js"></script>
-
-    <!--  Notifications Plugin    -->
-    <script src="assets/AdminDash/js/bootstrap-notify.js"></script>
-
-    <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
-	<script src="assets/AdminDash/js/paper-dashboard.js"></script>
-
-	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-	<script src="assets/AdminDash/js/demo.js"></script>
-	<script src="vendors/jquery-1.9.1.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendors/datatables/js/jquery.dataTables.min.js"></script>
-
-        <script src="assets/AdminDash/scripts.js"></script>
-        <script src="assets/AdminDash/DT_bootstrap.js"></script>
-        <script>
-        $(function() {
-            
-        });
-        </script>
-
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="assets/demo/demo.js"></script>
+<script>
+    $(document).ready(function() {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+    });
+</script>
 
 </html>

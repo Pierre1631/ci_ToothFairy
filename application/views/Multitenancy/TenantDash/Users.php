@@ -57,6 +57,12 @@ $user = $this->session->userdata('user');
                         </a>
                     </li>
                     <li>
+                        <a href="TenantDash_records">
+                            <i class="now-ui-icons users_circle-08"></i>
+                            <p>Records</p>
+                        </a>
+                    </li>
+                    <li>
                         <a href="TenantDash_Transactions">
                             <i class="now-ui-icons business_globe"></i>
                             <p>Transactions</p>

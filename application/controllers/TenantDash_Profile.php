@@ -19,6 +19,7 @@ class TenantDash_Profile extends CI_Controller {
 		$data2 = array(
 			'user1'=>$data,
 			'company'=>$data1);
+		
 		$this->load->view('Multitenancy/TenantDash/Myprofile',$data2);
 	}
 	
