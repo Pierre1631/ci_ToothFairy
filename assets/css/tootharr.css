@@ -1,0 +1,24 @@
+/*.cell{
+	font-family:Montserrat;
+	margin: 10px 0 0 18px;
+	background-color:#89CFF0;
+	
+}*/
+.tit{
+	color:#89CFF0;
+	margin: 0 0 0 41%;
+}
+
+.button {
+    background-color:#89CFF0;
+    border: none;
+    color: white;
+    padding: 10px 2px;
+    text-align: center;
+    text-decoration: none;
+	font-family: Montserrat;
+    display: inline-block;
+    font-size: 9px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
