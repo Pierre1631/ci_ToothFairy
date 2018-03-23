@@ -20,12 +20,12 @@ class TenantDash_Profile_Edit extends CI_Controller {
 			'company'=>$data1);
 		$this->load->view('Multitenancy/TenantDash/Myprofile_edit',$data2);
 	}
-	
+
 	public function get_Info(){
 		$data=$this->tenant_model->getInfo($_SESSION['user']);
 		return $data;
 	}
-	
+
 	public function get_Web($id){
 		$data=$this->tenant_model->getWebName($id);
 		return $data;
@@ -33,6 +33,7 @@ class TenantDash_Profile_Edit extends CI_Controller {
 	public function edit(){
 		if(isset($_SESSION['user'])){
 			$data = array(
+					'tenant_company' => $_POST['Company'],
 					'tenant_contact' => $_POST['Contact'],
 				 	'Tenant_address' => $_POST['Address'],
 				 	'tenant_city'   => $_POST['City'],
@@ -44,6 +45,5 @@ class TenantDash_Profile_Edit extends CI_Controller {
 		}
 		redirect('TenantDash_Profile');
 	}
-	
-}	
+}
 ?>

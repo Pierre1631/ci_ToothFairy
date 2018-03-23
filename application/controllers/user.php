@@ -4,6 +4,8 @@ class user extends CI_Controller {
 	public function __construct() {
 		parent:: __construct();
 		$this->load->model('user_model');
+		$tenant =  $this->session->userdata('UserEmail');
+
 	}
 	public function index()	{
 		$this->load->view('Tenant/tenant_header');
@@ -25,6 +27,13 @@ class user extends CI_Controller {
 		else
 		{
 			$user=array(
+		 	'user_fname'=>$this->input->post('UserFirstName'),
+	  	'user_mname'=>$this->input->post('UserMiddleName'),
+		 	'user_lname'=>$this->input->post('UserLastName'),
+		  'user_email'=>$this->input->post('UserEmail'),
+		 	'user_pass'=>sha1($this->input->post('UserPass')),
+	     );
+	  	print_r($user);
 				'user_fname'=>$this->input->post('UserFirstName'),
 				'user_mname'=>$this->input->post('UserMiddleName'),
 				'user_lname'=>$this->input->post('UserLastName'),
@@ -48,11 +57,13 @@ class user extends CI_Controller {
 	}
 	public function login_user(){
   		$user_login=array(
-	  		'UserEmail'=>$this->input->post('UserEmail'),
-	  		'UserPass'=>sha1($this->input->post('UserPass'))
+				'user_email'=>$this->input->post('UserEmail'),
+			 	'user_pass'=>sha1($this->input->post('UserPass'))
     	);
-    	$data=$this->user_model->login_user($user_login['UserEmail'],$user_login['UserPass']);
+
+    	$data=$this->user_model->login_user($user_login['user_email'],$user_login['user_pass']);
   		if($data){
+					$this->session->set_userdata('UserEmail', $_POST['UserEmail']);
 	        $this->session->set_userdata('UserID',$data['user_id']);
 	        $this->session->set_userdata('UserFirstName',$data['user_fname']);
 	        $this->session->set_userdata('UserMiddleName',$data['user_mname']);
@@ -61,8 +72,15 @@ class user extends CI_Controller {
 	       	$this->session->set_userdata('UserBirthdate',$data['user_birthday']);
 	        $this->session->set_userdata('UserContact',$data['user_contact']);
 	        $this->session->set_userdata('UserGender',$data['user_gender']);
+    		redirect('Clinic_home');
     		redirect('Tenant/tenant_Homepage');
   		}
+			if(empty($data))
+			{
+				$this->load->view('Tenant/tenant_header');
+				$this->load->view('Tenant/TenantHomepage');
+				$this->load->view('Tenant/tenant_footer');
+			}
   		else{
 	        $this->session->set_flashdata('error_msg', 'Invalid Username or Password. Please try again.');
 					$this->load->view('Tenant/tenant_header');
@@ -78,5 +96,10 @@ class user extends CI_Controller {
 	public function login_view() {
 		$this->load->view("Tenant/login_modal");
 	}
-	
+	public function logout(){
+		$tenant=$this->session->sess_destroy();
+		$this->load->view('Tenant/tenant_header');
+		$this->load->view('Tenant/TenantHomepage');
+		$this->load->view('Tenant/tenant_footer');
+	}
 }

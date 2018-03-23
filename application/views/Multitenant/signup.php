@@ -190,14 +190,6 @@
                   </span>
                   <input class="form-control" type="password" placeholder="Confirm Password" name="confirmpassword" required />
                 </div>
-                <div >
-                  <input type="radio" name="template" />Template 1
-                  <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Click to view</button>
-                </div>
-                <div >
-                  <input type="radio" name="template" />Template 2
-                  <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Click to view</button>
-                </div>
                 <div class="footer text-center">
                   <input class="btn btn-primary btn-round btn-lg btn-block" type="submit" value="Register"/>
                 </div>

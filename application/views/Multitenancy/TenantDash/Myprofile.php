@@ -164,6 +164,11 @@ $user = $this->session->userdata('user');
                             </div>
                             <div class="card-body">
                                 <form class="form" method="get" action="">
+                                  <div class="row">
+                                    <div class="col-md-3 pr-1">
+                                        <div class="form-group">
+                                            <label>ID</label>
+                                            <input type="text" class="form-control" disabled="" name="Company" Name="tenant_id" placeholder="Company" value="<?php echo $user1['tenant_id']?>">
                                     <div class="row">
                                         <div class="col-md-4 pr-1">
                                             <div class="form-group">
@@ -216,27 +221,73 @@ $user = $this->session->userdata('user');
                                         <div class="col-md-4 pl-1">
                                             <div class="form-group">
                                                 <label>Postal Code</label>
-
                                                 <input type="text" disabled="" class="form-control" placeholder="ZIP Code" value="<?php echo $user1['tenant_postal']?>">
-
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                      <div class="col-md-5 pr-1">
+                                          <div class="form-group">
+                                              <label>Company</label>
+                                              <input type="text" class="form-control" name="Company" disabled="" placeholder="Company" value="<?php echo $user1['tenant_company']?>">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-5 pr-1">
+                                          <div class="form-group">
+                                              <label>Website Name</label>
+                                              <input type="text" class="form-control" name="web_name" disabled="" placeholder="Website Name" value="<?php echo $company['web_name']?>">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="exampleInputEmail1">Email address</label>
+                                              <input type="email" class="form-control" disabled="" name="Email" placeholder="Email" value="<?php echo $user1['tenant_email']?>">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label>Contact</label>
+                                              <input type="text" class="form-control" disabled="" placeholder="Contact" name="Contact" value="<?php echo $user1['tenant_contact']?>">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                          <div class="form-group">
+                                              <label>Address</label>
+                                              <input type="text" class="form-control" disabled="" placeholder="Address" name="Address" value="<?php echo $user1['tenant_address']?>">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-4 pr-1">
+                                          <div class="form-group">
+                                              <label>City</label>
+                                              <input type="text" class="form-control" disabled="" placeholder="City" name="City" value="<?php echo $user1['tenant_city']?>">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 pl-1">
+                                          <div class="form-group">
+                                              <label>Postal Code</label>
+                                              <input type="text" class="form-control" disabled="" placeholder="ZIP Code" name="ZipCode" value="<?php echo $user1['tenant_postal']?>">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
                                         <div class="col-md-4">
                                             <div class="button">
                                                 <a href="TenantDash_Profile_Edit"><button type="button" class="btn btn-success" style="background-color:#f96332">Edit</button></a>
-
                                             </div>
                                         </div>
-
-
-                                        <div>
-                                            <div class="form-row">
-                                                <a style="padding: 18px; text-decoration: none;" href="<?php echo base_url('MilesSmile');?>">View Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                      <div>
+                                          <div class="form-row">
+                                              <a style="padding: 18px; text-decoration: none;" href="<?php echo base_url('MilesSmile');?>">View Website</a>
+                                          </div>
+                                      </div>
+                                  </div>
                                 </form>
                             </div>
                         </div>

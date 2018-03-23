@@ -1,4 +1,4 @@
-<?php
+	<?php
 class tenant_model extends CI_model{
 	public function register_user($user){
     	$this->db->insert('tenant', $user);
@@ -44,6 +44,11 @@ class tenant_model extends CI_model{
 	public function update_info($email,$data){
 		$this->db->where('tenant_email',$email);
 		$this->db->update('tenant',$data);
+		return TRUE;
+	}
+	public function update_WebName($email,$data){
+		$this->db->where('web_name',$email);
+		$this->db->update('website',$data);
 		return TRUE;
 	}
 	public function get_Info(){
