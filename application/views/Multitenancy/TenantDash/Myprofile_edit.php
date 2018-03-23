@@ -163,6 +163,7 @@ $user = $this->session->userdata('user');
                                             <div class="form-group">
                                                 <label>Company</label>
                                                 <input type="text" class="form-control" name="Company" placeholder="Company" value="<?php echo $user1['tenant_company']?>">
+                                                <input type="text" class="form-control" disabled="" name="Company" placeholder="Company" value="<?php echo $user1['tenant_company']?>">
                                             </div>
                                         </div>
                                     </div>
@@ -171,6 +172,7 @@ $user = $this->session->userdata('user');
                                             <div class="form-group">
                                                 <label>Website Name</label>
                                                 <input type="text" class="form-control" name="web_name" placeholder="Website Name" value="<?php echo $company['web_name']?>">
+                                                <input type="text" class="form-control" disabled="" name="Website" placeholder="Website Name" value="<?php echo $company['web_name']?>">
                                             </div>
                                         </div>
                                     </div>

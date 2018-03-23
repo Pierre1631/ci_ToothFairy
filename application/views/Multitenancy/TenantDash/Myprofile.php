@@ -169,6 +169,60 @@ $user = $this->session->userdata('user');
                                         <div class="form-group">
                                             <label>ID</label>
                                             <input type="text" class="form-control" disabled="" name="Company" Name="tenant_id" placeholder="Company" value="<?php echo $user1['tenant_id']?>">
+                                    <div class="row">
+                                        <div class="col-md-4 pr-1">
+                                            <div class="form-group">
+
+                                                <label>Company</label>
+                                                <input type="text" class="form-control" disabled="" placeholder="Company" value="<?php echo $user1['tenant_company']?>">
+                                            </div>
+                                        </div>
+										<div class="col-md-5 pr-1" style="margin-left:20px">
+                                            <div class="form-group">
+                                                <label>Website Name</label>
+                                                <input type="text" class="form-control" disabled="" placeholder="Website Name" value="<?php echo $company['web_name']?>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+										<div class="col-md-6">
+                                            <div class="form-group">
+
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control" disabled="" placeholder="Email" value="<?php echo $user1['tenant_email']?>">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Contact</label>
+                                                <input type="text" disabled="" class="form-control" placeholder="Contact" value="<?php echo $user1['tenant_contact']?>">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+										<div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Address</label>
+
+                                                <input type="text" disabled="" class="form-control" placeholder="Address" value="<?php echo $user1['tenant_address']?>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 pr-1">
+                                            <div class="form-group">
+                                                <label>City</label>
+
+                                                <input type="text" disabled="" class="form-control" placeholder="City" value="<?php echo $user1['tenant_city']?>">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 pl-1">
+                                            <div class="form-group">
+                                                <label>Postal Code</label>
+                                                <input type="text" disabled="" class="form-control" placeholder="ZIP Code" value="<?php echo $user1['tenant_postal']?>">
+                                            </div>
                                         </div>
                                     </div>
                                       <div class="col-md-5 pr-1">

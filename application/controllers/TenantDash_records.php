@@ -14,6 +14,6 @@ class TenantDash_records extends CI_Controller {
 	public function index()
 	{
 
-    $this->load->view('Multitenancy/TenantDash/records');
-  }
+		$this->load->view('Multitenancy/TenantDash/records');
+	}
 }
