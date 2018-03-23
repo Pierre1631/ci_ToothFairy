@@ -46,6 +46,11 @@ class tenant_model extends CI_model{
 		$this->db->update('tenant',$data);
 		return TRUE;
 	}
+	public function update_WebName($email,$data){
+		$this->db->where('web_name',$email);
+		$this->db->update('website',$data);
+		return TRUE;
+	}
 	public function get_Info(){
 		$this->db->select('*');
 		$this->db->from('tenant');

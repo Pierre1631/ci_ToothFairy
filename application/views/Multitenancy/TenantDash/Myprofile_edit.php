@@ -153,21 +153,29 @@ $user = $this->session->userdata('user');
                             <div class="card-body">
                                 <form method="post" action="<?php echo site_url('TenantDash_Profile_Edit/edit/')?>">
                                     <div class="row">
+                                      <div class="col-md-3 pr-1">
+                                          <div class="form-group">
+                                              <label>ID</label>
+                                              <input type="text" class="form-control" disabled="" name="tenant_id" placeholder="Company" value="<?php echo $user1['tenant_id']?>">
+                                          </div>
+                                      </div>
                                         <div class="col-md-5 pr-1">
                                             <div class="form-group">
                                                 <label>Company</label>
-                                                <input type="text" class="form-control" disabled="" name="Company" placeholder="Company" value="<?php echo $user1['tenant_company']?>">
-                                            </div>
-                                        </div>
-										<div class="col-md-5 pr-1" style="margin-left:20px">
-                                            <div class="form-group">
-                                                <label>Website Name</label>
-                                                <input type="text" class="form-control" name="Website" placeholder="Website Name" value="<?php echo $company['web_name']?>">
+                                                <input type="text" class="form-control" name="Company" placeholder="Company" value="<?php echo $user1['tenant_company']?>">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-										<div class="col-md-6">
+                                        <div class="col-md-5 pr-1">
+                                            <div class="form-group">
+                                                <label>Website Name</label>
+                                                <input type="text" class="form-control" name="web_name" placeholder="Website Name" value="<?php echo $company['web_name']?>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+						                            <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Email address</label>
                                                 <input type="email" class="form-control" disabled="" name="Email" placeholder="Email" value="<?php echo $user1['tenant_email']?>">
@@ -203,9 +211,9 @@ $user = $this->session->userdata('user');
                                         </div>
                                     </div>
                                     <div class="row">
-										<div class="col-md-4">
-                                            <input type="submit" class="btn btn-success" value="Save" style="background-color:#f96332">
-											<a href="TenantDash_Profile"><button type="button" class="btn btn-success" style="background-color:#f96332">Cancel</button></a>
+										                   <div class="col-md-4">
+                                          <input type="submit" class="btn btn-success" value="Save" style="background-color:#f96332">
+											                    <a href="TenantDash_Profile"><button type="button" class="btn btn-success" style="background-color:#f96332">Cancel</button></a>
                                         </div>
                                     </div>
                                 </form>
